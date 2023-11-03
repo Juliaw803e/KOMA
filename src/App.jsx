@@ -20,12 +20,19 @@ function App() {
           BAKA {count}
         </button>
       </div>
+
      </div> 
     </>
   )
 }
 
 /* Eventuell routing i kommentarer: 
+Baka knappen som ska in i return typ:
+  <div>
+      <Link to={"/ingredients/" + cca3}> BAKA </Link>
+  </div>
+
+
 function ingredients(){
   return(
     <h1>välj ingredients </h1> 
@@ -43,7 +50,7 @@ function PageRoute(){
   <BrowserRouter>
     <Routes>
          <Route path="/" element={<App />}/>
-         <Route path="/country/:cca3" element={<ingredients />}/>
+         <Route path="/ingredients/:cca3" element={<ingredients />}/>
          <Route path="/sista" element={slutsida/>/>
       </Routes>
   </BrowserRouter>
