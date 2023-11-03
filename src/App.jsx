@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 //import {useParams, BrowserRouter, Link, Outlet, Routes, Route} from "react-router-dom"
+// IMPORTERA detta för att raden ovan ska funka: "npm install react-router-dom"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,28 +21,30 @@ function App() {
           BAKA {count}
         </button>
       </div>
+    
 
      </div> 
     </>
   )
 }
 
-/* Eventuell routing i kommentarer: 
+/* Eventuell routing: 
 Baka knappen som ska in i return typ:
   <div>
-      <Link to={"/ingredients/" + cca3}> BAKA </Link>
+      <Link to={"/ingredients"}> BAKA </Link>
   </div>
 
 
 function ingredients(){
   return(
-    <h1>välj ingredients </h1> 
+    <h1>välj ingredients </h1>
+    //Här ska man på något sätt koppla till componenten ingredients 
   )
 }
 
 function slutsida(){
   return(
-    <h1>välj ingredients </h1> 
+    <h1>Slutsida!! </h1> 
   )
 }
 
@@ -50,12 +53,12 @@ function PageRoute(){
   <BrowserRouter>
     <Routes>
          <Route path="/" element={<App />}/>
-         <Route path="/ingredients/:cca3" element={<ingredients />}/>
-         <Route path="/sista" element={slutsida/>/>
+         <Route path="/ingredients" element={<ingredients />}/>
+         <Route path="/sista" element={<slutsida/>}/>
       </Routes>
   </BrowserRouter>
 
   )
-}*/
-
+}
+*/
 export default App
