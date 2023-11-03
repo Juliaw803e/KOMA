@@ -9,22 +9,15 @@ function App() {
   return (
     <>
     <div className="FirstPage">
+      // Lägg till cookie crumble logga
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+          <img src={viteLogo} className="logo" alt="Vite logo" /> 
       </div>
-      <h1>Vite +  sofia</h1>
+      <h1>Cookie Crumble</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           BAKA {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
      </div> 
     </>
