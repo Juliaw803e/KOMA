@@ -20,7 +20,8 @@ function IngredientsFunction() {
 
   return (
     <div>
-      <h1>Välj ingredienser</h1>
+      <a href="/"><h3> HOME</h3></a>
+      <h1>Bild på den önskade kakan</h1>
       <div className="ingredients">
         <Ingredients
           ingredientResponses={ingredientResponses}
