@@ -54,7 +54,7 @@ function App(){
   <Router>
     <Routes>
          <Route path="/" element={<Home />}/>
-         <Route path="/ingredients" element={<IngredientsFunction />}/>
+         <Route path="/ingredients" element={<Ingredients />}/>
          <Route path="/sista" element={<Slutsida/>}/>
       </Routes>
   </Router>
