@@ -14,7 +14,7 @@ function Home() {
       <div className="card">
       </div>
       <div>
-            <Link to="/ingredients">Go to Ingredients</Link>
+            <Link to="/ingredients">BAKA</Link>
       </div>
 
      </div> 
@@ -31,7 +31,7 @@ function Home() {
 
 function IngredientsFunction(){
   return(
-    <h1>välj ingredients </h1>
+    <h1>välj ingredienser </h1>
     //Här ska man på något sätt koppla till componenten ingredients 
   )
 }
