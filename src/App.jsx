@@ -2,10 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-//import {useParams, BrowserRouter, Link, Outlet, Routes, Route} from "react-router-dom"
+import {useParams, BrowserRouter as Router, Link, Outlet, Routes, Route} from "react-router-dom"
 // IMPORTERA detta för att raden ovan ska funka: "npm install react-router-dom"
+import Ingredients from './Ingredients'
 
-function App() {
+function Home() {
   const [count, setCount] = useState(0)
 
   return (
@@ -18,44 +19,48 @@ function App() {
           BAKA {count}
         </button>
       </div>
-    
+
+      <div>
+          <Link to="/ingredients">Go to Ingredients</Link>
+      </div>
 
      </div> 
     </>
   )
 }
 
-/* Eventuell routing: 
-Baka knappen som ska in i return typ:
-  <div>
-      <Link to={"/ingredients"}> BAKA </Link>
-  </div>
+//Eventuell routing: 
+//Baka knappen som ska in i return typ:
+/*<div>
+<Link to={"/ingredients"}> BAKA </Link>
+</div>*/
 
 
-function ingredients(){
+function IngredientsFunction(){
   return(
     <h1>välj ingredients </h1>
     //Här ska man på något sätt koppla till componenten ingredients 
   )
 }
 
-function slutsida(){
+function Slutsida(){
   return(
     <h1>Slutsida!! </h1> 
   )
 }
 
-function PageRoute(){
+function App(){
   return(
-  <BrowserRouter>
+  <Router>
     <Routes>
-         <Route path="/" element={<App />}/>
-         <Route path="/ingredients" element={<ingredients />}/>
-         <Route path="/sista" element={<slutsida/>}/>
+         <Route path="/" element={<Home />}/>
+         <Route path="/ingredients" element={<Ingredients />}/>
+         <Route path="/sista" element={<Slutsida/>}/>
       </Routes>
-  </BrowserRouter>
+  </Router>
 
   )
 }
-*/
+
+
 export default App
