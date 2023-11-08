@@ -30,7 +30,7 @@ function Home() {
 
  //Här ska man på något sätt koppla till componenten ingredients
 function IngredientsFunction(){
-  let arrayen = [1, 2, 3]; 
+  let arrayen = [1]; 
 
   return(
     <div>
