@@ -60,19 +60,19 @@ const question = [
 ]
 return (
     <div>
-      <h2>{question[currentIngredient].text}</h2>
+      {<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}
       <ul>
-        {question[currentIngredient].options.map((option) => (
+        {question[currentIngredient].options.map((option) => ( // map function som renderar en lista med alternativ. key hjälper att rendera 
           <li key={option.id}>
             <label>
               <input
-                type="radio"
-                value={option.id}
-                checked={ingredientResponses[currentIngredient] === option.id}
-                onChange={(e) => {
-                  const newResponses = [...ingredientResponses];
+                type="radio" //radio button 
+                value={option.id} //0,1,2 
+                checked={ingredientResponses[currentIngredient] === option.id} //kollar om currentingredient i ingredientresponses array = id. Om de matchar så "check:as" (väljs) knappen
+                onChange={(e) => { //onchange uppdaterar state med vad man valt. 
+                  const newResponses = [...ingredientResponses]; //en kopia av ingredienrespons array skapas 
                   newResponses[currentIngredient] = parseInt(e.target.value);
-                  setIngredientResponses(newResponses);
+                  setIngredientResponses(newResponses); //state uppdateras med setIngredientResponse 
                 }}
               />
               <img src={option.image} alt={`Option ${option.id}`} />
@@ -84,7 +84,7 @@ return (
       <button
         onClick={() => {
             if (currentIngredient > 0) {
-              setCurrentIngredient(currentIngredient - 1);
+              setCurrentIngredient(currentIngredient - 1); //man jämför de olika arraysen om det finns mer sidor att komma till 
             } else {
             // else???
         }}}
@@ -95,7 +95,7 @@ return (
 
       <button
         onClick={() => {
-          if (currentIngredient < question.length - 1) {
+          if (currentIngredient < question.length - 1) { //man jämför de olika arraysen om det finns mer sidor att komma till 
             setCurrentIngredient(currentIngredient + 1);
           } else {
             // Alla ingredienser har besvarats, gör något med svaren
