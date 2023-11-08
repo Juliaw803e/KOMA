@@ -1,7 +1,7 @@
 import react from "react"; 
 import { useState } from "react";
 //import {useParams, BrowserRouter, Link, Outlet, Routes, Route} from "react-router-dom"
-
+import './App.css';
 
 const Ingredients = ({
     ingredientResponses,
