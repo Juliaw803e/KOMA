@@ -61,12 +61,15 @@ const question = [
 ]
 
 //där cca3 ska vara den ingrediensen som man är på 
+
+const currentQuestionData = question[currentQuestion];
+
 return (
      
      <div>
-        <h1>(question.text)</h1>
+        <h1>{currentQuestionData.text}</h1>
         
-     <h1> kommer vi hit?</h1>
+ 
     </div>
 
 
