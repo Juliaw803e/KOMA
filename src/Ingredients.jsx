@@ -11,7 +11,7 @@ const[currentQuestion, setCurrentQuestion] = useState(0);
 
 const question = [
     {
-        text: "Välj hur myekct mjöl",
+        text: "Välj hur mycket mjöl",
         options: [
             { id: 0, image: 'imageOne.jpg', isCorrect: false },
             { id: 1, image: 'imageOne.jpg', isCorrect: false },
