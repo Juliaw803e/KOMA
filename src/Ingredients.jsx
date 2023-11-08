@@ -80,16 +80,18 @@ return (
           </li>
         ))}
       </ul>
+
       <button
         onClick={() => {
             if (currentIngredient > 0) {
               setCurrentIngredient(currentIngredient - 1);
             } else {
             // else???
-        }}
+        }}}
         >
         Back
         </button>
+
       <button
         onClick={() => {
           if (currentIngredient < question.length - 1) {
