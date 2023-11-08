@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import {useParams, BrowserRouter as Router, Link, Outlet, Routes, Route} from "react-router-dom"
 // IMPORTERA detta för att raden ovan ska funka: "npm install react-router-dom"
@@ -12,16 +10,11 @@ function Home() {
   return (
     <>
     <div className="FirstPage">
-      // Lägg till cookie crumble logga
       <h1>Cookie Crumble</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          BAKA {count}
-        </button>
       </div>
-
       <div>
-          <Link to="/ingredients">Go to Ingredients</Link>
+            <Link to="/ingredients">Go to Ingredients</Link>
       </div>
 
      </div> 
