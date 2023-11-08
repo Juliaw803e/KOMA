@@ -88,9 +88,10 @@ return (
             } else {
             // else???
         }}}
-        >
+        >{'\u2190'}
         Back
         </button>
+     
 
       <button
         onClick={() => {
@@ -102,7 +103,7 @@ return (
           }
         }}
       >
-        Nästa
+      Next{'→'}
       </button>
     </div>
   );
