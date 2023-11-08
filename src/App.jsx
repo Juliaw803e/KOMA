@@ -20,6 +20,7 @@ function IngredientsFunction() {
 
   return (
     <div>
+      <a href="/"><h3> HOME</h3></a>
       <h1>Bild på den önskade kakan</h1>
       <div className="ingredients">
         <Ingredients
