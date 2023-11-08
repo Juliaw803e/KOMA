@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import Ingredients from './Ingredients';
+import Result from './Result';
 
 function Home() {
   return (
@@ -32,8 +33,13 @@ function IngredientsFunction() {
   );
 }
 
-function Slutsida() {
-  return <h1>Slutsida!!</h1>;
+function ResultFunction(){
+
+  return (
+    <div>
+
+    </div>
+  )
 }
 
 function App() {
@@ -42,7 +48,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ingredients" element={<IngredientsFunction />} />
-        <Route path="/sista" element={<Slutsida />} />
+        <Route path="/result" element={<Result/>} />
       </Routes>
     </Router>
   );
