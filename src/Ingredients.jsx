@@ -60,7 +60,7 @@ const question = [
 ]
 return (
     <div>
-      <h1>{question[currentIngredient].text}</h1>
+      <h2>{question[currentIngredient].text}</h2>
       <ul>
         {question[currentIngredient].options.map((option) => (
           <li key={option.id}>
