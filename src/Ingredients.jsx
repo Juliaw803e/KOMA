@@ -3,12 +3,11 @@ import { useState } from "react";
 //import {useParams, BrowserRouter, Link, Outlet, Routes, Route} from "react-router-dom"
 
 
-//data=countryobject as a prop, invariabel
-const Ingredients = ({props, key}) => {
-
-//Som en array av frågorna: 
-const[currentQuestion, setCurrentQuestion] = useState(0); 
-
+const Ingredients = ({
+    ingredientResponses,
+    setIngredientResponses,
+  }) => {
+    const [currentIngredient, setCurrentIngredient] = useState(0);
 const question = [
     {
         text: "Välj hur mycket mjöl",
@@ -59,32 +58,42 @@ const question = [
         ]
     },
 ]
-
-//där cca3 ska vara den ingrediensen som man är på 
 return (
-     
-     <div>
-        <h1>(question.text)</h1>
-        
-     <h1> kommer vi hit?</h1>
+    <div>
+      <h1>{question[currentIngredient].text}</h1>
+      <ul>
+        {question[currentIngredient].options.map((option) => (
+          <li key={option.id}>
+            <label>
+              <input
+                type="radio"
+                value={option.id}
+                checked={ingredientResponses[currentIngredient] === option.id}
+                onChange={(e) => {
+                  const newResponses = [...ingredientResponses];
+                  newResponses[currentIngredient] = parseInt(e.target.value);
+                  setIngredientResponses(newResponses);
+                }}
+              />
+              <img src={option.image} alt={`Option ${option.id}`} />
+            </label>
+          </li>
+        ))}
+      </ul>
+      <button
+        onClick={() => {
+          if (currentIngredient < question.length - 1) {
+            setCurrentIngredient(currentIngredient + 1);
+          } else {
+            // Alla ingredienser har besvarats, gör något med svaren
+            // Du kan till exempel spara svaren eller navigera till nästa sida.
+          }
+        }}
+      >
+        Nästa
+      </button>
     </div>
-
-
-);
-     
-    
+  );
 };
 
-
-export default Ingredients
-
-/*<div className="options">
-            {question.options.map((option) => (
-                <div 
-                key = {option.id}
-                className={`option ${selectedOption === option.id ? 'selected' : ''}`}
-                onClick={() => handleOptionClick(option.id)}
-                >
-                </div>
-            ))}
-        </div>*/
+export default Ingredients;
