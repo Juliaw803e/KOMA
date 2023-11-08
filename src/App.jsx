@@ -28,11 +28,20 @@ function Home() {
 <Link to={"/ingredients"}> BAKA </Link>
 </div>*/
 
-
+ //Här ska man på något sätt koppla till componenten ingredients
 function IngredientsFunction(){
+  let arrayen = [1, 2, 3]; 
+
   return(
+    <div>
     <h1>välj ingredienser </h1>
-    //Här ska man på något sätt koppla till componenten ingredients 
+     
+    <div className="ingredients">
+    {arrayen.map((item, i) => (
+      <Ingredients prop={item} key={i} />
+    ))}
+  </div>
+  </div>
   )
 }
 

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 //data=countryobject as a prop, invariabel
-const Ingredients = ({props}) => {
+const Ingredients = ({props, key}) => {
 
 //Som en array av frågorna: 
 const[currentQuestion, setCurrentQuestion] = useState(0); 
@@ -21,41 +21,41 @@ const question = [
     {
         text: "Välj hur mycket socker",
         options: [
-            { id: 3, image: 'imageOne.jpg', isCorrect: false },
-            { id: 4, image: 'imageOne.jpg', isCorrect: false },
-            { id: 5, image: 'imageOne.jpg', isCorrect: false },
+            { id: 0, image: 'imageOne.jpg', isCorrect: false },
+            { id: 1, image: 'imageOne.jpg', isCorrect: false },
+            { id: 2, image: 'imageOne.jpg', isCorrect: false },
         ]
     },
     {
         text: "Välj hur mycket smör",
         options: [
-            { id: 6, image: 'imageOne.jpg', isCorrect: false },
-            { id: 7, image: 'imageOne.jpg', isCorrect: false },
-            { id: 8, image: 'imageOne.jpg', isCorrect: false },
+            { id: 0, image: 'imageOne.jpg', isCorrect: false },
+            { id: 1, image: 'imageOne.jpg', isCorrect: false },
+            { id: 2, image: 'imageOne.jpg', isCorrect: false },
         ]
     },
     {
         text: "Välj hur många ägg",
         options: [
-            { id: 9, image: 'imageOne.jpg', isCorrect: false },
-            { id: 10, image: 'imageOne.jpg', isCorrect: false },
-            { id: 11, image: 'imageOne.jpg', isCorrect: false },
+            { id: 0, image: 'imageOne.jpg', isCorrect: false },
+            { id: 1, image: 'imageOne.jpg', isCorrect: false },
+            { id: 2, image: 'imageOne.jpg', isCorrect: false },
         ]
     },
     {
         text: "Välj hur mycket chokladknappar",
         options: [
-            { id: 12, image: 'imageOne.jpg', isCorrect: false },
-            { id: 13, image: 'imageOne.jpg', isCorrect: false },
-            { id: 14, image: 'imageOne.jpg', isCorrect: false },
+            { id: 0, image: 'imageOne.jpg', isCorrect: false },
+            { id: 1, image: 'imageOne.jpg', isCorrect: false },
+            { id: 2, image: 'imageOne.jpg', isCorrect: false },
         ]
     },
     {
         text: "Välj hur lång tid i ugnen",
         options: [
-            { id: 15, image: 'imageOne.jpg', isCorrect: false },
-            { id: 16, image: 'imageOne.jpg', isCorrect: false },
-            { id: 17, image: 'imageOne.jpg', isCorrect: false },
+            { id: 0, image: 'imageOne.jpg', isCorrect: false },
+            { id: 1, image: 'imageOne.jpg', isCorrect: false },
+            { id: 2, image: 'imageOne.jpg', isCorrect: false },
         ]
     },
 ]
@@ -65,20 +65,8 @@ return (
      
      <div>
         <h1>(question.text)</h1>
-        <div className="options">
-            {question.options.map((option) => (
-                <div 
-                key = {option.id}
-                className={`option ${selectedOption === option.id ? 'selected' : ''}`}
-                onClick={() => handleOptionClick(option.id)}
-                >
-                </div>
-            ))}
-
-            <h1> kommer vi hit?</h1>
-
-        </div>
-    
+        
+     <h1> kommer vi hit?</h1>
     </div>
 
 
@@ -89,3 +77,14 @@ return (
 
 
 export default Ingredients
+
+/*<div className="options">
+            {question.options.map((option) => (
+                <div 
+                key = {option.id}
+                className={`option ${selectedOption === option.id ? 'selected' : ''}`}
+                onClick={() => handleOptionClick(option.id)}
+                >
+                </div>
+            ))}
+        </div>*/
