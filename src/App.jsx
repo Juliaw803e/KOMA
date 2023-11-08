@@ -13,9 +13,6 @@ function Home() {
     <>
     <div className="FirstPage">
       // Lägg till cookie crumble logga
-      <div>
-          <img src={viteLogo} className="logo" alt="Vite logo" /> 
-      </div>
       <h1>Cookie Crumble</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
