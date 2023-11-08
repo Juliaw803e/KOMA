@@ -13,30 +13,30 @@ const question = [
         text: "Välj hur mycket mjöl",
         options: [
             { id: 0, image: 'imageOne.jpg', isCorrect: false },
-            { id: 1, image: 'imageOne.jpg', isCorrect: false },
+            { id: 1, image: 'imageOne.jpg', isCorrect: true },
             { id: 2, image: 'imageOne.jpg', isCorrect: false },
-        ]
+        ]   
     },
     {
         text: "Välj hur mycket socker",
         options: [
             { id: 0, image: 'imageOne.jpg', isCorrect: false },
             { id: 1, image: 'imageOne.jpg', isCorrect: false },
-            { id: 2, image: 'imageOne.jpg', isCorrect: false },
+            { id: 2, image: 'imageOne.jpg', isCorrect: true },
         ]
     },
     {
         text: "Välj hur mycket smör",
         options: [
             { id: 0, image: 'imageOne.jpg', isCorrect: false },
-            { id: 1, image: 'imageOne.jpg', isCorrect: false },
+            { id: 1, image: 'imageOne.jpg', isCorrect: true },
             { id: 2, image: 'imageOne.jpg', isCorrect: false },
         ]
     },
     {
         text: "Välj hur många ägg",
         options: [
-            { id: 0, image: 'imageOne.jpg', isCorrect: false },
+            { id: 0, image: 'imageOne.jpg', isCorrect: true },
             { id: 1, image: 'imageOne.jpg', isCorrect: false },
             { id: 2, image: 'imageOne.jpg', isCorrect: false },
         ]
@@ -44,7 +44,7 @@ const question = [
     {
         text: "Välj hur mycket chokladknappar",
         options: [
-            { id: 0, image: 'imageOne.jpg', isCorrect: false },
+            { id: 0, image: 'imageOne.jpg', isCorrect: true },
             { id: 1, image: 'imageOne.jpg', isCorrect: false },
             { id: 2, image: 'imageOne.jpg', isCorrect: false },
         ]
@@ -54,7 +54,7 @@ const question = [
         options: [
             { id: 0, image: 'imageOne.jpg', isCorrect: false },
             { id: 1, image: 'imageOne.jpg', isCorrect: false },
-            { id: 2, image: 'imageOne.jpg', isCorrect: false },
+            { id: 2, image: 'imageOne.jpg', isCorrect: true },
         ]
     },
 ]
@@ -85,8 +85,7 @@ return (
           if (currentIngredient < question.length - 1) {
             setCurrentIngredient(currentIngredient + 1);
           } else {
-            // Alla ingredienser har besvarats, gör något med svaren
-            // Du kan till exempel spara svaren eller navigera till nästa sida.
+            navigate('/result');
           }
         }}
       >
