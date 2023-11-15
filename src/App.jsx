@@ -16,6 +16,7 @@ function Home() {
   );
 }
 
+
 function IngredientsFunction() {
   const [ingredientResponses, setIngredientResponses] = useState([]);
 

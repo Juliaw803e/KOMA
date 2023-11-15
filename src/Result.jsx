@@ -4,6 +4,8 @@ const Result = () => {
   const location = useLocation();
   const message = location.state?.message || 'No result to display';
 
+ //const ingredientsArray = ["mjöl", "socker", "smör", "ägg", "chokladknappar", "tid i ugnen"];
+
   return (
    
 
@@ -16,6 +18,7 @@ const Result = () => {
     <ul>
       {location.state.incorrectQuestions.map((index) => (
         <li key={index + 1}>{`Question ${index + 1}`}</li>
+        // <li key={index}>{`${index + 1}: ${ingredientsArray[index]}`}
       ))}
     </ul>
   </div>

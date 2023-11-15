@@ -78,18 +78,23 @@ const checkResults = () => {
   };
 };
   
-  const handleNext = () => {
-    if (currentIngredient < question.length - 1) {
-      setCurrentIngredient(currentIngredient + 1);
-    } else {
-      const { allCorrect, incorrectQuestions } = checkResults();
-      const resultMessage = allCorrect
-        ? "Tasty cookie!"
-        : `Incorrect at question(s): ${incorrectQuestions.map(index => index + 1).join(', ')}`;
-  
-      navigate('/result', { state: { message: resultMessage } });
-    }
-  };
+const ingredientsArray = ["mjöl", "socker", "smör", "ägg", "chokladknappar", "tid i ugnen"];
+
+const handleNext = () => {
+  if (currentIngredient < question.length - 1) {
+    setCurrentIngredient(currentIngredient + 1);
+  } else {
+    const { allCorrect, incorrectQuestions } = checkResults();
+
+    const incorrectIngredientsList = incorrectQuestions.map(index => ingredientsArray[index]);
+    const resultMessage = allCorrect
+      ? "Tasty cookie!"
+      : `Incorrect at ingredient(s): ${incorrectIngredientsList.join(', ')}`;
+
+    navigate('/result', { state: { message: resultMessage } });
+  }
+};
+
 
 return (
     <div>
