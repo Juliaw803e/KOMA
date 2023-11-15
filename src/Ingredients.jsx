@@ -58,20 +58,32 @@ const question = [
         ]
     },
 ]
-const checkResults = () => {
-  // Check if all selected options are correct
-  const allCorrect = ingredientResponses.every((response, index) => {
-    const correctOption = question[index].options.find(option => option.isCorrect);
-    return correctOption && correctOption.id === response;
-  });
-  return allCorrect ? "Tasty cookie!" : "Nasty, don't cook again!";
-  };
 
+  const checkResults = () => {
+    // Check if all selected options are correct
+    const incorrectQuestions = ingredientResponses.reduce((incorrectIndices, response, index) => {
+      const correctOption = question[index].options.find(option => option.isCorrect);
+      if (correctOption && correctOption.id !== response.selectedOptionId) {
+        incorrectIndices.push(index);
+      }
+      return incorrectIndices;
+    }, []);
+  
+    return {
+      allCorrect: incorrectQuestions.length === 0,
+      incorrectQuestions,
+    };
+  };
+  
   const handleNext = () => {
     if (currentIngredient < question.length - 1) {
       setCurrentIngredient(currentIngredient + 1);
     } else {
-      const resultMessage = checkResults();
+      const { allCorrect, incorrectQuestions } = checkResults();
+      const resultMessage = allCorrect
+        ? "Tasty cookie!"
+        : `Incorrect at question(s): ${incorrectQuestions.map(index => index + 1).join(', ')}`;
+  
       navigate('/result', { state: { message: resultMessage } });
     }
   };
