@@ -1,6 +1,5 @@
-import react from "react"; 
-import { useState } from "react";
-//import {useParams, BrowserRouter, Link, Outlet, Routes, Route} from "react-router-dom"
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import './App.css';
 
 const Ingredients = ({
@@ -8,6 +7,7 @@ const Ingredients = ({
     setIngredientResponses,
   }) => {
     const [currentIngredient, setCurrentIngredient] = useState(0);
+    const navigate = useNavigate(); // Initialize useNavigate
 const question = [
     {
         text: "Välj hur mycket mjöl",
@@ -20,7 +20,7 @@ const question = [
     {
         text: "Välj hur mycket socker",
         options: [
-            { id: 3, image: 'imageOne.jpg', isCorrect: false },
+            { id: 3, image: 'imageOne.jpg', isCorrect: true },
             { id: 4, image: 'imageOne.jpg', isCorrect: false },
             { id: 5, image: 'imageOne.jpg', isCorrect: false },
         ]
@@ -29,14 +29,14 @@ const question = [
         text: "Välj hur mycket smör",
         options: [
             { id: 6, image: 'imageOne.jpg', isCorrect: false },
-            { id: 7, image: 'imageOne.jpg', isCorrect: false },
+            { id: 7, image: 'imageOne.jpg', isCorrect: true },
             { id: 8, image: 'imageOne.jpg', isCorrect: false },
         ]
     },
     {
         text: "Välj hur många ägg",
         options: [
-            { id: 9, image: 'imageOne.jpg', isCorrect: false },
+            { id: 9, image: 'imageOne.jpg', isCorrect: true },
             { id: 10, image: 'imageOne.jpg', isCorrect: false },
             { id: 11, image: 'imageOne.jpg', isCorrect: false },
         ]
@@ -46,18 +46,56 @@ const question = [
         options: [
             { id: 12, image: 'imageOne.jpg', isCorrect: false },
             { id: 13, image: 'imageOne.jpg', isCorrect: false },
-            { id: 14, image: 'imageOne.jpg', isCorrect: false },
+            { id: 14, image: 'imageOne.jpg', isCorrect: true },
         ]
     },
     {
         text: "Välj hur lång tid i ugnen",
         options: [
-            { id: 15, image: 'imageOne.jpg', isCorrect: false },
+            { id: 15, image: 'imageOne.jpg', isCorrect: true },
             { id: 16, image: 'imageOne.jpg', isCorrect: false },
             { id: 17, image: 'imageOne.jpg', isCorrect: false },
         ]
     },
 ]
+
+const checkResults = () => {
+  // Check if all selected options are correct
+  const incorrectQuestions = ingredientResponses.reduce((incorrectIndices, response, index) => {
+    const correctOption = question[index].options.find(option => option.isCorrect);
+    
+    // Ensure that correctOption is defined and compare the response directly with correctOption.id
+    if (correctOption && correctOption.id !== response) {
+      incorrectIndices.push(index);
+    }
+
+    return incorrectIndices;
+  }, []);
+
+  return {
+    allCorrect: incorrectQuestions.length === 0,
+    incorrectQuestions,
+  };
+};
+  
+const ingredientsArray = ["mjöl", "socker", "smör", "ägg", "chokladknappar", "tid i ugnen"];
+
+const handleNext = () => {
+  if (currentIngredient < question.length - 1) {
+    setCurrentIngredient(currentIngredient + 1);
+  } else {
+    const { allCorrect, incorrectQuestions } = checkResults();
+
+    const incorrectIngredientsList = incorrectQuestions.map(index => ingredientsArray[index]);
+    const resultMessage = allCorrect
+      ? "Mums, din kaka blev perfekt!" //if allCorrect == true 
+      : `Blä! Testa att ändra ${incorrectIngredientsList.join(', ')}`; //if allCorrect == false 
+
+    navigate('/result', { state: { message: resultMessage } }); //skicka message i state. Message är resultmessage som kan ha två olika fall beroende på om allcorrect == true/false
+  }
+};
+
+
 return (
     <div>
       {<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}
@@ -81,28 +119,14 @@ return (
         ))}
       </ul>
 
-      <button
-        onClick={() => {
-            if (currentIngredient > 0) {
-              setCurrentIngredient(currentIngredient - 1); //man jämför de olika arraysen om det finns mer sidor att komma till 
-            } else {
-            // else???
-        }}}
-        >{'\u2190'}
-        Back
-        </button>
-     
+      {currentIngredient !== 0 && (
+       <button className = "navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
+        {'\u2190'} Back
+      </button>
+      )}
 
-      <button
-        onClick={() => {
-          if (currentIngredient < question.length - 1) { //man jämför de olika arraysen om det finns mer sidor att komma till 
-            setCurrentIngredient(currentIngredient + 1);
-          } else {
-            navigate('/result');
-          }
-        }}
-      >
-      Next{'→'}
+     <button className = "navigation-button-rifht" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
+      Next {'→'}
       </button>
     </div>
   );

@@ -16,6 +16,7 @@ function Home() {
   );
 }
 
+
 function IngredientsFunction() {
   const [ingredientResponses, setIngredientResponses] = useState([]);
 
@@ -37,6 +38,12 @@ function ResultFunction(){
 
   return (
     <div>
+      <a href="/"><h3> HOME</h3></a>
+      
+      <div className="Result">
+        <Result
+        />
+      </div>
 
     </div>
   )
@@ -48,7 +55,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ingredients" element={<IngredientsFunction />} />
-        <Route path="/result" element={<Result/>} />
+        <Route path="/result" element={<ResultFunction/>} />
       </Routes>
     </Router>
   );
