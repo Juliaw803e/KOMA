@@ -1,13 +1,10 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
 .logo {
   height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -33,19 +30,74 @@
   }
 }
 
+/* font title */
+
+.logo {
+  padding-top: 15px;
+  width: 97%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 25px;
+}
+
+.nacho2 {
+  padding-top: 5%;
+}
+.nacho1 {
+  width: 67%;
+  height: auto;
+  display: block;
+  margin-left: 0;
+  padding-right: 40%;
+  padding-left: 5%;
+}
+
+@font-face {
+  font-family: justanotherhand;
+  src: url('././justanotherhand-regular-webfont.woff2') format('woff2')
+}
+
+.baka {
+  margin-top: 5%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color:#F1CB9E;
+  color: #3f2b12;
+  border-radius: 5px;
+  border: 2px;
+  cursor: pointer;
+  font-family: justanotherhand;
+  font-size: 50px;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+.bubble {
+  width: 70%;
+  height: auto;
+  padding-left: 25%;
+}
+
+a:baka{
+  background-color:blueviolet;
+  font-family: justanotherhand;
+}
+
 .card {
-  padding: 2em;
+  
 }
 
 
 .FirstPage {
+  height: 852px;
+  width: 393px;
   background-color: #F4E7E1;
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
 }
 
@@ -54,9 +106,7 @@ li {
 }
 
 li a {
-  display: inline-block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }

@@ -7,10 +7,20 @@ import Result from './Result';
 function Home() {
   return (
     <div className="FirstPage">
-      <h1>Cookie Crumble</h1>
-      <div className="card"></div>
-      <div>
-        <Link to="/ingredients">BAKA</Link>
+      <div className="logo">
+      <img src="../images/logo.png" alt="logo" className="logo"/>
+      </div>
+      <div className="bubble">
+    
+      <div className="nacho2">
+        <div className="bubble">
+        <img src="../images/bubble.png" alt="bubble" className="bubble"/>
+        </div>
+      </div>
+      <img src="../images/nacho1.png" alt="nacho1" className="nacho1"/>
+      </div>
+      <div className="bakaButton">
+        <Link to="/ingredients" className="baka">BAKA</Link>
       </div>
     </div>
   );
