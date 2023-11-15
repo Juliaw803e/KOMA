@@ -1,6 +1,5 @@
-import react from "react"; 
-import { useState } from "react";
-//import {useParams, BrowserRouter, Link, Outlet, Routes, Route} from "react-router-dom"
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import './App.css';
 
 const Ingredients = ({
@@ -8,6 +7,7 @@ const Ingredients = ({
     setIngredientResponses,
   }) => {
     const [currentIngredient, setCurrentIngredient] = useState(0);
+    const navigate = useNavigate(); // Initialize useNavigate
 const question = [
     {
         text: "Välj hur mycket mjöl",
@@ -58,6 +58,24 @@ const question = [
         ]
     },
 ]
+const checkResults = () => {
+  // Check if all selected options are correct
+  const allCorrect = ingredientResponses.every((response, index) => {
+    const correctOption = question[index].options.find(option => option.isCorrect);
+    return correctOption && correctOption.id === response;
+  });
+  return allCorrect ? "Tasty cookie!" : "Nasty, don't cook again!";
+  };
+
+  const handleNext = () => {
+    if (currentIngredient < question.length - 1) {
+      setCurrentIngredient(currentIngredient + 1);
+    } else {
+      const resultMessage = checkResults();
+      navigate('/result', { state: { message: resultMessage } });
+    }
+  };
+
 return (
     <div>
       {<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}
@@ -81,33 +99,14 @@ return (
         ))}
       </ul>
 
-      {currentIngredient !== 0 &&(
-      <button
-        onClick={() => {
-            if (currentIngredient > 0) {
-              setCurrentIngredient(currentIngredient - 1); //man jämför de olika arraysen om det finns mer sidor att komma till 
-            } else {
-            // else???
-        }}}
-        >{'\u2190'}
-        Back
-        </button>  
+      {currentIngredient !== 0 && (
+        <button onClick={() => setCurrentIngredient(currentIngredient - 1)}>
+          {'\u2190'} Back
+        </button>
       )}
-  
 
-      
-     
-
-      <button
-        onClick={() => {
-          if (currentIngredient < question.length - 1) { //man jämför de olika arraysen om det finns mer sidor att komma till 
-            setCurrentIngredient(currentIngredient + 1);
-          } else {
-            navigate('/result');
-          }
-        }}
-      >
-      Next{'→'}
+      <button onClick={handleNext}>
+        Next{'→'}
       </button>
     </div>
   );
