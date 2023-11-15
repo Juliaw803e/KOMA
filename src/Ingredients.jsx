@@ -120,12 +120,12 @@ return (
       </ul>
 
       {currentIngredient !== 0 && (
-       <button onClick={() => setCurrentIngredient(currentIngredient - 1)}>
+       <button className = "navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
         {'\u2190'} Back
       </button>
       )}
 
-     <button onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
+     <button className = "navigation-button-rifht" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
       Next {'→'}
       </button>
     </div>
