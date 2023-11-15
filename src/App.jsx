@@ -37,7 +37,13 @@ function ResultFunction(){
 
   return (
     <div>
-      
+      <h1> Klar kaka</h1>
+
+      <div className="Result">
+        <Result
+        />
+      </div>
+
     </div>
   )
 }
@@ -48,7 +54,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ingredients" element={<IngredientsFunction />} />
-        <Route path="/result" element={<Result/>} />
+        <Route path="/result" element={<ResultFunction/>} />
       </Routes>
     </Router>
   );
