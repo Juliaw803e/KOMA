@@ -100,13 +100,13 @@ return (
       </ul>
 
       {currentIngredient !== 0 && (
-        <button onClick={() => setCurrentIngredient(currentIngredient - 1)}>
-          {'\u2190'} Back
-        </button>
+       <button onClick={() => setCurrentIngredient(currentIngredient - 1)}>
+        {'\u2190'} Back
+      </button>
       )}
 
-      <button onClick={handleNext}>
-        Next{'→'}
+     <button onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
+      Next {'→'}
       </button>
     </div>
   );
