@@ -38,7 +38,6 @@ function ResultFunction(){
 
   return (
     <div>
-      <h1> Klar kaka</h1>
 
       <div className="Result">
         <Result

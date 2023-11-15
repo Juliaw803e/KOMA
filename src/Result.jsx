@@ -10,7 +10,7 @@ const Result = () => {
    
 
 <div>
-<h2>Result</h2>
+<h2>Lägg in färdig kaka samt målkakan här</h2>
 <p>{message}</p>
 </div>
 );
