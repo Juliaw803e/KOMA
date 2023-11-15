@@ -1,19 +1,23 @@
-import React from 'react';
+import { useLocation } from 'react-router-dom';
 
-function Result({ ingredientResponses }) {
-  // Här kan du utvärdera ingredientResponses och bestämma om det blev rätt eller fel
-  const isPerfect = /* Sätt ett villkor baserat på svaren */yes; 
-  
+const Result = () => {
+  const location = useLocation();
+  const message = location.state?.message || 'No result to display';
+
+
   return (
-    <div>
-      <h1>Resultat</h1>
-      {isPerfect ? (
-        <p>Allt blev perfekt!</p>
-      ) : (
-        <p>Usch, det blev äckligt.</p>
-      )}
-    </div>
-  );
-}
+<div>
+<h2>Lägg in färdig kaka samt målkakan här</h2>
+<p>{message}</p>
+
+{message === 'Mums, din kaka blev perfekt!' && (
+        <h5> rättsvarknapp som ska skcika till hem och göra ny kaka</h5>
+)}
+
+
+</div>
+);
+
+};
 
 export default Result;
