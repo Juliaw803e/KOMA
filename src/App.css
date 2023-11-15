@@ -60,3 +60,47 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+
+h3 {
+  flex-direction: left;
+}
+
+.ingredientpages {
+  background-color: #F4E7E1;
+  width: 393px;
+  height: 852px ;
+}
+
+.ingredients-container {
+
+
+}
+
+.question-text {
+  width: 336px;
+  height: 87px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Yaldevi Colombo SemiBold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px; 
+}
+
+.option {
+
+}
+
+
+.idealcookieText {
+  width: 147px;
+  height: 31px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Yaldevi Colombo SemiBold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
