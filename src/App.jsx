@@ -38,7 +38,8 @@ function ResultFunction(){
 
   return (
     <div>
-
+      <a href="/"><h3> HOME</h3></a>
+      
       <div className="Result">
         <Result
         />
