@@ -20,7 +20,7 @@ const question = [
     {
         text: "Välj hur mycket socker",
         options: [
-            { id: 3, image: 'imageOne.jpg', isCorrect: false },
+            { id: 3, image: 'imageOne.jpg', isCorrect: true },
             { id: 4, image: 'imageOne.jpg', isCorrect: false },
             { id: 5, image: 'imageOne.jpg', isCorrect: false },
         ]
@@ -29,14 +29,14 @@ const question = [
         text: "Välj hur mycket smör",
         options: [
             { id: 6, image: 'imageOne.jpg', isCorrect: false },
-            { id: 7, image: 'imageOne.jpg', isCorrect: false },
+            { id: 7, image: 'imageOne.jpg', isCorrect: true },
             { id: 8, image: 'imageOne.jpg', isCorrect: false },
         ]
     },
     {
         text: "Välj hur många ägg",
         options: [
-            { id: 9, image: 'imageOne.jpg', isCorrect: false },
+            { id: 9, image: 'imageOne.jpg', isCorrect: true },
             { id: 10, image: 'imageOne.jpg', isCorrect: false },
             { id: 11, image: 'imageOne.jpg', isCorrect: false },
         ]
@@ -46,13 +46,13 @@ const question = [
         options: [
             { id: 12, image: 'imageOne.jpg', isCorrect: false },
             { id: 13, image: 'imageOne.jpg', isCorrect: false },
-            { id: 14, image: 'imageOne.jpg', isCorrect: false },
+            { id: 14, image: 'imageOne.jpg', isCorrect: true },
         ]
     },
     {
         text: "Välj hur lång tid i ugnen",
         options: [
-            { id: 15, image: 'imageOne.jpg', isCorrect: false },
+            { id: 15, image: 'imageOne.jpg', isCorrect: true },
             { id: 16, image: 'imageOne.jpg', isCorrect: false },
             { id: 17, image: 'imageOne.jpg', isCorrect: false },
         ]
