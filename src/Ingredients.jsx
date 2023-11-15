@@ -88,10 +88,10 @@ const handleNext = () => {
 
     const incorrectIngredientsList = incorrectQuestions.map(index => ingredientsArray[index]);
     const resultMessage = allCorrect
-      ? "Tasty cookie!"
-      : `Incorrect at ingredient(s): ${incorrectIngredientsList.join(', ')}`;
+      ? "Tasty cookie!" //if allCorrect == true 
+      : `testa att ändra ${incorrectIngredientsList.join(', ')}`; //if allCorrect == false 
 
-    navigate('/result', { state: { message: resultMessage } });
+    navigate('/result', { state: { message: resultMessage } }); //skicka message i state. Message är resultmessage som kan ha två olika fall beroende på om allcorrect == true/false
   }
 };
 
