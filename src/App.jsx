@@ -37,7 +37,7 @@ function ResultFunction(){
 
   return (
     <div>
-
+      
     </div>
   )
 }

@@ -81,6 +81,7 @@ return (
         ))}
       </ul>
 
+      {currentIngredient !== 0 &&(
       <button
         onClick={() => {
             if (currentIngredient > 0) {
@@ -90,7 +91,11 @@ return (
         }}}
         >{'\u2190'}
         Back
-        </button>
+        </button>  
+      )}
+  
+
+      
      
 
       <button
