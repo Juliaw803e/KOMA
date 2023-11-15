@@ -59,21 +59,24 @@ const question = [
     },
 ]
 
-  const checkResults = () => {
-    // Check if all selected options are correct
-    const incorrectQuestions = ingredientResponses.reduce((incorrectIndices, response, index) => {
-      const correctOption = question[index].options.find(option => option.isCorrect);
-      if (correctOption && correctOption.id !== response.selectedOptionId) {
-        incorrectIndices.push(index);
-      }
-      return incorrectIndices;
-    }, []);
-  
-    return {
-      allCorrect: incorrectQuestions.length === 0,
-      incorrectQuestions,
-    };
+const checkResults = () => {
+  // Check if all selected options are correct
+  const incorrectQuestions = ingredientResponses.reduce((incorrectIndices, response, index) => {
+    const correctOption = question[index].options.find(option => option.isCorrect);
+    
+    // Ensure that correctOption is defined and compare the response directly with correctOption.id
+    if (correctOption && correctOption.id !== response) {
+      incorrectIndices.push(index);
+    }
+
+    return incorrectIndices;
+  }, []);
+
+  return {
+    allCorrect: incorrectQuestions.length === 0,
+    incorrectQuestions,
   };
+};
   
   const handleNext = () => {
     if (currentIngredient < question.length - 1) {
