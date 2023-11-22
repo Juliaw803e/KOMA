@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import React from 'react';
+import './App.css';
 import { useNavigate } from "react-router-dom"; 
 
 
@@ -27,11 +28,11 @@ const Result = () => {
 {message === 'Mums, din kaka blev perfekt!' ? (
         <div>
           <h5> rättsvarknapp som ska skcika till hem och göra ny kaka</h5>
-          <button onClick={goToIngredientsPage}>Baka en ny kaka</button>
+          <button className="bakaEnTill" onClick={goToIngredientsPage}>Baka en ny kaka</button>
         </div>
       ) : (
         <div>
-          <button onClick={goToIngredientsPage}>Baka igen</button>
+          <button className="bakaIgen" onClick={goToIngredientsPage}>Försök igen</button>
         </div>
       )}
 
