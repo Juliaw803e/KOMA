@@ -12,14 +12,15 @@ function Home() {
       </div> 
 
       <div className="logo">
-      <img src="../images/logo.png" alt="logo" className="logo"/>
+      <img src="../images/logo (3).png" alt="logo" className="logo"/>
       </div>
-      <div className="bubble">
+      <div className="nachoBubble">
     
       <div className="nacho2">
-        <div className="bubble">
-        <img src="../images/bubble.png" alt="bubble" className="bubble"/>
-        </div>
+        {/*<div className="bubble">
+          <p> bubble bubble </p>
+  </div>*/}
+          <div class="bubble bubble-bottom-left" contenteditable>Välj ingredienter för att baka kakan som visas! </div>
       </div>
       <img src="../images/nacho1.png" alt="nacho1" className="nacho1"/>
       </div>
