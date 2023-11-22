@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import './App.css';
 
-const barStyle = {
-  width: '70%', // Example width
-  height: '30px', // Example height
-  backgroundColor: '#04AA6D', // Example background color
-  // Additional styles here
-};
-
 const Ingredients = ({
     ingredientResponses,
     setIngredientResponses,
   }) => {
     const [currentIngredient, setCurrentIngredient] = useState(0);
     const navigate = useNavigate(); // Initialize useNavigate
+
+const barStyle = {
+  width: parseInt(currentIngredient, 10) * 16 + '%', // Example width
+  height: '30px', // Example height
+  backgroundColor: '#04AA6D', // Example background color
+  // Additional styles here
+};
+
 const question = [
     {
         text: "Välj hur mycket mjöl",
