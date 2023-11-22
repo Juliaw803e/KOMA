@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import './App.css';
 
+const barStyle = {
+  width: '70%', // Example width
+  height: '30px', // Example height
+  backgroundColor: '#04AA6D', // Example background color
+  // Additional styles here
+};
+
 const Ingredients = ({
     ingredientResponses,
     setIngredientResponses,
@@ -100,7 +107,7 @@ return (
   <div>
     <div id="progressBar">
     <div id="myProgress">
-      <div id="myBar"></div>
+      <div id="myBar" style={barStyle}></div>
     </div>
     </div>
 
