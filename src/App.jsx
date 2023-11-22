@@ -39,14 +39,14 @@ function IngredientsFunction() {
   const [ingredientResponses, setIngredientResponses] = useState([]);
 
   return (
-    <div>
+    <div className='ingredientsPages'>
       <a href="/"><h3> HOME</h3></a>
 
       <div className="helpButton"> 
       <button onClick= {myFunction}>Hjälpknapp</button>
       </div> 
 
-      <h1>Bild på den önskade kakan</h1>
+      <h1 className='idealcookieText'>Önskad kaka</h1>
       <div className="ingredients">
         <Ingredients
           ingredientResponses={ingredientResponses}
