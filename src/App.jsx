@@ -7,6 +7,10 @@ import Result from './Result';
 function Home() {
   return (
     <div className="FirstPage">
+      <div className="helpButton"> 
+      <button onClick= {myFunction}>Hjälpknapp</button>
+      </div> 
+
       <div className="logo">
       <img src="../images/logo (3).png" alt="logo" className="logo"/>
       </div>
@@ -27,6 +31,9 @@ function Home() {
   );
 }
 
+function myFunction() {
+  alert("Hjälprutan är här!");
+}
 
 function IngredientsFunction() {
   const [ingredientResponses, setIngredientResponses] = useState([]);
@@ -34,6 +41,11 @@ function IngredientsFunction() {
   return (
     <div>
       <a href="/"><h3> HOME</h3></a>
+
+      <div className="helpButton"> 
+      <button onClick= {myFunction}>Hjälpknapp</button>
+      </div> 
+
       <h1>Bild på den önskade kakan</h1>
       <div className="ingredients">
         <Ingredients
@@ -50,6 +62,10 @@ function ResultFunction(){
   return (
     <div>
       <a href="/"><h3> HOME</h3></a>
+
+      <div className="helpButton"> 
+      <button onClick= {myFunction}>Hjälpknapp</button>
+      </div> 
       
       <div className="Result">
         <Result
