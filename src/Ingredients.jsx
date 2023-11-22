@@ -97,7 +97,13 @@ const handleNext = () => {
 
 
 return (
-    <div>
+  <div>
+    <div id="progressBar">
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+    </div>
+
       {<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}
       <ul>
         {question[currentIngredient].options.map((option) => ( // map function som renderar en lista med alternativ. key hjälper att rendera 

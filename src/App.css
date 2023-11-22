@@ -154,3 +154,24 @@ h3 {
   font-weight: 600;
   line-height: normal;
 }
+
+#progressBar{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+#myProgress {
+  width: 45%;
+  background-color: #ffffff;
+  position: fixed; 
+  top: 0px;
+  display: flex; 
+}
+
+#myBar {
+  width: 20%;
+  height: 30px;
+  background-color: #04AA6D;
+  top: 0px;
+}
