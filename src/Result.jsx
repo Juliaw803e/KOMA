@@ -15,6 +15,12 @@ const Result = () => {
 
   return (
 <div>
+<div id="progressBar">
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+  </div>
+
 <h2>Lägg in färdig kaka samt målkakan här</h2>
 <p>{message}</p>
 
