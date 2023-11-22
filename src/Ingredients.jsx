@@ -2,19 +2,21 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import './App.css';
 
-const barStyle = {
-  width: '70%', // Example width
-  height: '30px', // Example height
-  backgroundColor: '#04AA6D', // Example background color
-  // Additional styles here
-};
-
 const Ingredients = ({
     ingredientResponses,
     setIngredientResponses,
   }) => {
     const [currentIngredient, setCurrentIngredient] = useState(0);
     const navigate = useNavigate(); // Initialize useNavigate
+
+const barStyle = {
+  width: parseInt(currentIngredient, 10) * 16 + '%', // Example width
+  height: '30px', // Example height
+  backgroundColor: '#04AA6D', // Example background color
+  transition: '2s'
+  // Additional styles here
+};
+
 const question = [
     {
         text: "Välj hur mycket mjöl",
@@ -104,26 +106,26 @@ const handleNext = () => {
 
 
 return (
-  <div>
-    <div id="progressBar">
-    <div id="myProgress">
+
+  <div className="ingredientPages">
+    <div>
+      <div id="progressBar"></div>
+      <div id="myProgress"></div>
       <div id="myBar" style={barStyle}></div>
     </div>
-    </div>
-
-      {<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}
-      <ul>
-        {question[currentIngredient].options.map((option) => ( // map function som renderar en lista med alternativ. key hjälper att rendera 
-          <li key={option.id}>
-            <label>
-              <input
-                type="radio" //radio button 
-                value={option.id} //0,1,2 
-                checked={ingredientResponses[currentIngredient] === option.id} //kollar om currentingredient i ingredientresponses array = id. Om de matchar så "check:as" (väljs) knappen
-                onChange={(e) => { //onchange uppdaterar state med vad man valt. 
-                  const newResponses = [...ingredientResponses]; //en kopia av ingredienrespons array skapas 
-                  newResponses[currentIngredient] = parseInt(e.target.value);
-                  setIngredientResponses(newResponses); //state uppdateras med setIngredientResponse 
+    <div className="question-text">{<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}</div>
+    <ul>
+      {question[currentIngredient].options.map((option) => ( // map function som renderar en lista med alternativ. key hjälper att rendera 
+        <li key={option.id}>
+          <label>
+            <input
+              type="radio" //radio button 
+              value={option.id} //0,1,2 
+              checked={ingredientResponses[currentIngredient] === option.id} //kollar om currentingredient i ingredientresponses array = id. Om de matchar så "check:as" (väljs) knappen
+              onChange={(e) => { //onchange uppdaterar state med vad man valt. 
+                const newResponses = [...ingredientResponses]; //en kopia av ingredienrespons array skapas 
+                newResponses[currentIngredient] = parseInt(e.target.value);
+                setIngredientResponses(newResponses); //state uppdateras med setIngredientResponse 
                 }}
               />
               <img src={option.image} alt={`Option ${option.id}`} />
@@ -138,7 +140,7 @@ return (
       </button>
       )}
 
-     <button className = "navigation-button-rifht" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
+     <button className = "navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
       Next {'→'}
       </button>
     </div>
