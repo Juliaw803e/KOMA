@@ -2,6 +2,13 @@ import { useLocation } from 'react-router-dom';
 import React from 'react';
 import { useNavigate } from "react-router-dom"; 
 
+const barStyle = {
+  width: '100%', // Example width
+  height: '30px', // Example height
+  backgroundColor: '#04AA6D', // Example background color
+  // Additional styles here
+  transition: '1s'
+};
 
 const Result = () => {
   const location = useLocation();
@@ -17,7 +24,7 @@ const Result = () => {
 <div>
 <div id="progressBar">
     <div id="myProgress">
-      <div id="myBar"></div>
+      <div id="myBar" style={barStyle}></div>
     </div>
   </div>
 

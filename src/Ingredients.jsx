@@ -8,6 +8,15 @@ const Ingredients = ({
   }) => {
     const [currentIngredient, setCurrentIngredient] = useState(0);
     const navigate = useNavigate(); // Initialize useNavigate
+
+const barStyle = {
+  width: parseInt(currentIngredient, 10) * 16 + '%', // Example width
+  height: '30px', // Example height
+  backgroundColor: '#04AA6D', // Example background color
+  transition: '2s'
+  // Additional styles here
+};
+
 const question = [
     {
         text: "Välj hur mycket mjöl",
@@ -102,7 +111,7 @@ return (
     <div>
       <div id="progressBar"></div>
       <div id="myProgress"></div>
-      <div id="myBar"></div>
+      <div id="myBar" style={barStyle}></div>
     </div>
     <div className="question-text">{<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}</div>
     <ul>
