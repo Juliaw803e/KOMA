@@ -29,7 +29,7 @@ function Home() {
 }
 
 function myFunction() {
-  alert("Såhär spelar du: Välj och kombinera rätt mängd av varje ingrediens för försöka återskapa den kakan som visas. Lycka till!");
+  alert("Hjälprutan är här!");
 }
 
 function IngredientsFunction() {
