@@ -104,10 +104,19 @@ const handleNext = () => {
 
 
 return (
+<<<<<<< HEAD
   <div>
     <div id="progressBar">
     <div id="myProgress">
       <div id="myBar" style={barStyle}></div>
+=======
+
+  <div className="ingredientPages">
+    <div>
+      <div id="progressBar"></div>
+      <div id="myProgress"></div>
+      <div id="myBar"></div>
+>>>>>>> parent of 436e015 (Merge branch 'main' of https://github.com/Juliaw803e/KOMA)
     </div>
     </div>
 

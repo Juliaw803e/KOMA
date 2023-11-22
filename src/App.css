@@ -171,3 +171,9 @@ h3 {
   display: flex; 
 }
 
+#myBar {
+  width: 20%;
+  height: 30px;
+  background-color: #04AA6D;
+  top: 0px;
+}
