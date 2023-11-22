@@ -13,6 +13,7 @@ const barStyle = {
   width: parseInt(currentIngredient, 10) * 16 + '%', // Example width
   height: '30px', // Example height
   backgroundColor: '#04AA6D', // Example background color
+  transition: '2s'
   // Additional styles here
 };
 

@@ -7,6 +7,7 @@ const barStyle = {
   height: '30px', // Example height
   backgroundColor: '#04AA6D', // Example background color
   // Additional styles here
+  transition: '1s'
 };
 
 const Result = () => {
