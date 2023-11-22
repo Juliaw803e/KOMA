@@ -44,7 +44,7 @@
   height: auto;
 }
 
-.baka, .bakaIgen, .bakaEnTill {
+.baka {
   margin-top: 5%;
   display: inline-block;
   text-align: center;
@@ -171,21 +171,3 @@ h3 {
   display: flex; 
 }
 
-/* Result page */
-
-.result {
-  background-color: #F4E7E1;
-  width: 393px;
-  height: 852px ;
-}
-
-.homeButton, .helpButton{ 
-  float:left; 
-  display:inline; 
-  width: 49%;
-}
-
-.helpButton {
-  background-image: url("../images/question.png");
-  background-repeat: no-repeat;
-}

@@ -17,6 +17,9 @@ function Home() {
       <div className="nachoBubble">
     
       <div className="nacho2">
+        {/*<div className="bubble">
+          <p> bubble bubble </p>
+  </div>*/}
           <div class="bubble bubble-bottom-left" contenteditable>Välj ingredienter för att baka kakan som visas! </div>
       </div>
       <img src="../images/nacho1.png" alt="nacho1" className="nacho1"/>
@@ -57,22 +60,16 @@ function IngredientsFunction() {
 function ResultFunction(){
 
   return (
-    <div> 
+    <div>
+      <a href="/"><h3> HOME</h3></a>
+
+      <div className="helpButton"> 
+      <button onClick= {myFunction}>Hjälpknapp</button>
+      </div> 
       
-      <div className="result">
-        <div className="header"> 
-          <div className="helpButton">
-            <button onClick= {myFunction}></button>
-          </div>
-          <div className="homeButton">
-            <a href="/"><img src="../images/house.png"></img></a>
-          </div>
-
-        </div>
-
+      <div className="Result">
         <Result
         />
-
       </div>
 
     </div>
