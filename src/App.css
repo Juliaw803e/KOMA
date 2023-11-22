@@ -1,62 +1,47 @@
+/* typsnitt */
+
+@font-face {
+  font-family: justanotherhand;
+  src: url('././justanotherhand-regular-webfont.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: yaldevi;
+  src: url('Yaldevi.woff') format('woff');
+}
+
+/* ?? */
+
 #root {
   max-width: 1280px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-/* font title */
+/* first page */
 
 .logo {
-  padding-top: 15px;
   width: 97%;
   height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 25px;
 }
 
 .nacho2 {
-  padding-top: 5%;
+  padding-left: 30%;
+  height: 15vw;
 }
 .nacho1 {
-  width: 67%;
+  width: 70%;
   height: auto;
   display: block;
   margin-left: 0;
   padding-right: 40%;
-  padding-left: 5%;
+  padding-left: 3%;
 }
 
-@font-face {
-  font-family: justanotherhand;
-  src: url('././justanotherhand-regular-webfont.woff2') format('woff2')
+.nachoBubble {
+  padding-top: 8%;
+  width: 93%;
+  height: auto;
 }
 
 .baka {
@@ -70,25 +55,42 @@
   border: 2px;
   cursor: pointer;
   font-family: justanotherhand;
-  font-size: 50px;
+  font-size: 60px;
   padding-right: 15%;
   padding-left: 15%;
+  padding-top: 2%;
+  box-shadow: 3px 3px 5px rgb(122, 122, 122);
+  
 }
 
 .bubble {
-  width: 70%;
-  height: auto;
-  padding-left: 25%;
+  margin-left: 25%;
+  font-family: yaldevi;
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  width: 60%;
+  background: #fff;
+  border-radius: 40px;
+  padding: 24px;
+  text-align: center;
+  color: #000;
 }
 
-a:baka{
-  background-color:blueviolet;
-  font-family: justanotherhand;
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom: -24px;
 }
 
-.card {
-  
-}
+
 
 
 .FirstPage {
@@ -153,4 +155,12 @@ h3 {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+/* result page */
+
+.Result {
+  height: 852px;
+  width: 393px;
+  background-color: #F4E7E1;
 }
