@@ -28,6 +28,7 @@ const Result = () => {
     <div id="myProgress">
       <div id="myBar" style={barStyle}></div>
     </div>
+<<<<<<< HEAD
   </div>  
 
 <p>{message}</p>
@@ -49,10 +50,14 @@ const Result = () => {
 )}
 
 </div>
+=======
+  </div> 
+>>>>>>> faab28e5761f42fe8315e21918f18ac70a9bacd5
 
 {message === 'Mums, din kaka blev perfekt!' ? (
 
 <div className = "nachoBubble2">
+<<<<<<< HEAD
   <div className= "nacho2">
     <div class="bubble bubble-bottom-left" contenteditable>Muuums </div>
   </div>
@@ -61,11 +66,27 @@ const Result = () => {
     <button className= "bakaIgen" onClick={goToIngredientsPage}>Baka igen</button>
   </div>
 </div>
+=======
+  <div class= "nacho2">
+    <div class="bubble bubble-bottom-left" contenteditable> {message} </div>
+  </div>
+    <img src="../images/nacho1.png" alt="nacho1" className="nacho1"/>
+    <button className="bakaIgen" onClick={goToIngredientsPage}> Baka en ny kaka</button>
+    </div>
+>>>>>>> faab28e5761f42fe8315e21918f18ac70a9bacd5
 ) : (
   <>
    <div className="nachoBubble2">
     <div className="nacho2">
+<<<<<<< HEAD
       <div className="bubble bubble-bottom-left" contentEditable>Bläääää</div>
+=======
+      <div className="bubble bubble-bottom-left" contentEditable>
+      {message}
+      </div>
+    </div>
+    <img src="../images/nacho1.png" alt="nacho1" className="nacho1" />
+>>>>>>> faab28e5761f42fe8315e21918f18ac70a9bacd5
     </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3" />
       </div> 

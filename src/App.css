@@ -120,10 +120,6 @@ h3 {
   height: 852px ;
 }
 
-.ingredients-container {
-
-
-}
 
 .question-text {
   width: 336px;
@@ -159,7 +155,7 @@ h3 {
   width: 45%;
   background-color: #ffffff;
   position: fixed; 
-  top: 0px;
+  top: 50px;
   display: flex; 
 }
 
@@ -177,6 +173,7 @@ h3 {
   height: 852px ;
 }
 
+<<<<<<< HEAD
 .bakaIgen {
   padding-bottom: 0;
 }
@@ -185,6 +182,17 @@ h3 {
   float:left; 
   display:inline; 
   width: 49%;
+=======
+.homeButton {
+  position: fixed;
+  top: 45;
+  left: 0;
+}
+.helpButton{ 
+  position: fixed;
+  top: 41;
+  right: 0;
+>>>>>>> faab28e5761f42fe8315e21918f18ac70a9bacd5
 }
 .helpButton button { 
   border-radius: 50%;
@@ -213,6 +221,10 @@ linear-gradient(
 bottom right;
 background-size: 100% 50%;
 background-repeat: no-repeat;
+<<<<<<< HEAD
+=======
+
+>>>>>>> faab28e5761f42fe8315e21918f18ac70a9bacd5
 }
 
 

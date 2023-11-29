@@ -29,7 +29,7 @@ function Home() {
 }
 
 function myFunction() {
-  alert("Hjälprutan är här!");
+  alert("Såhär spelar du! Välj rätt mängd av vardera ingrediens för att baka kakan som visas :)");
 }
 
 function IngredientsFunction() {
@@ -43,7 +43,7 @@ function IngredientsFunction() {
       <button onClick= {myFunction}>?</button>
       </div> 
 
-      <h1>Bild på den önskade kakan</h1>
+    
       <div className="ingredients">
         <Ingredients
           ingredientResponses={ingredientResponses}
