@@ -140,11 +140,6 @@ h3 {
   line-height: 17px; 
 }
 
-.option {
-
-}
-
-
 .idealcookieText {
   width: 147px;
   height: 31px;
@@ -198,4 +193,41 @@ h3 {
   width: 50px;              /* Diameter of the circle */
   height: 50px;
   background-color: #866F85;   
+}
+.navigation-button-right{
+  background: linear-gradient(
+    -135deg,
+    transparent 22px,
+    #9A7D63 22px,
+    #9A7D63 100%
+)
+top right,
+linear-gradient(
+    -45deg,
+    transparent 22px,
+    #9A7D63 22px,
+    #9A7D63 100%
+)
+bottom right;
+background-size: 100% 50%;
+background-repeat: no-repeat;
+}
+
+.navigation-button-left{
+background: linear-gradient(
+  135deg,
+  transparent 22px,
+  #9A7D63 22px,
+  #9A7D63 100%
+)
+top right,
+linear-gradient(
+  45deg,
+  transparent 22px,
+  #9A7D63 22px,
+  #9A7D63 100%
+)
+bottom right;
+background-size: 100% 50%;
+background-repeat: no-repeat;
 }

@@ -37,7 +37,7 @@ function IngredientsFunction() {
 
   return (
     <div>
-      <a href="/"><h3> HOME</h3></a>
+      <a className= "homeButton" href="/"><img src="../images/house.png"></img></a>
 
       <div className="helpButton"> 
       <button onClick= {myFunction}>?</button>
