@@ -149,11 +149,14 @@ h3 {
   display: flex; 
   align-items: center;
   justify-content: center;
-}
+  border-radius: 20px;
+} 
 
 #myProgress {
   width: 45%;
-  background-color: #ffffff;
+  background-color: #F4E7E1;
+  border: 3px solid #9bb685;
+  border-radius: 20px;
   position: fixed; 
   top: 50px;
   display: flex; 
@@ -203,7 +206,7 @@ background-color: transparent;
 }
 
 .kakor {
-  padding-top: 50px;
+  padding-top: 180px;
 }
 
 .nachoBubble2 {
@@ -254,14 +257,21 @@ background-color: transparent;
   font-size: 60px;
   padding-right: 15%;
   padding-left: 15%;
-  padding-top: 2%;
+  padding-top: 1%;
   padding-bottom: 0;
+  margin-top: 20px;
   box-shadow: 3px 3px 5px rgb(122, 122, 122);
 }
 
 .nachoBubble2 {
-  padding-top: 10px;
-  padding-left: 30px; 
+  width: 70%;
+  margin-top: 145px;
+  padding-left: 50px; 
   padding-top: 8%;
   height: auto;
+}
+
+.resultBubble {
+  padding-left: 10%;
+  padding-top: 2%;
 }
