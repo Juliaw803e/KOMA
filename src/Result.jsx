@@ -17,9 +17,8 @@ const Result = () => {
   const barStyle = {
     width: '100%', // Example width
     height: '30px', // Example height
-    backgroundColor: '#B5C9A5', // Example background color
-    transition: '2s',
-    borderRadius: '20px'
+    backgroundColor: '#04AA6D', // Example background color
+    transition: '2s'
     // Additional styles here
   };
 
@@ -30,6 +29,9 @@ const Result = () => {
       <div id="myBar" style={barStyle}></div>
     </div>
 </div>     
+
+<p>{message}</p>
+
 
 <div className= "kakor">
 
@@ -52,8 +54,7 @@ const Result = () => {
 {message === 'Mums, din kaka blev perfekt!' ? (
 
 <div className = "nachoBubble2">
-  <div className= "resultBubble">
-          <div class="bubble bubble-bottom-left" contenteditable> Mums! Din kaka blev perfekt. </div>
+  <div className= "nacho2">
   </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3"/>
   <div>
@@ -63,11 +64,10 @@ const Result = () => {
 ) : (
   <>
    <div className="nachoBubble2">
-    <div className="resultBubble">
-      <div class="bubble bubble-bottom-left" contenteditable>Blä! Prova ändra ingredienserna. </div>
+    <div className="nacho2">
     </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3" />
-    </div> 
+      </div> 
     <div>
       <button className="bakaIgen" onClick={goToIngredientsPage}> Försök igen</button>
     </div>
