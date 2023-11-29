@@ -173,16 +173,6 @@ h3 {
   height: 852px ;
 }
 
-<<<<<<< HEAD
-.bakaIgen {
-  padding-bottom: 0;
-}
-
-.homeButton, .helpButton{ 
-  float:left; 
-  display:inline; 
-  width: 49%;
-=======
 .homeButton {
   position: fixed;
   top: 45;
@@ -192,9 +182,9 @@ h3 {
   position: fixed;
   top: 41;
   right: 0;
->>>>>>> faab28e5761f42fe8315e21918f18ac70a9bacd5
 }
-.helpButton button { 
+
+.helpButto button { 
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -221,10 +211,6 @@ linear-gradient(
 bottom right;
 background-size: 100% 50%;
 background-repeat: no-repeat;
-<<<<<<< HEAD
-=======
-
->>>>>>> faab28e5761f42fe8315e21918f18ac70a9bacd5
 }
 
 
