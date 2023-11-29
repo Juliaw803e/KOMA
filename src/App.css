@@ -158,7 +158,7 @@ h3 {
   width: 45%;
   background-color: #ffffff;
   position: fixed; 
-  top: 0px;
+  top: 50px;
   display: flex; 
 }
 
@@ -176,10 +176,15 @@ h3 {
   height: 852px ;
 }
 
-.homeButton, .helpButton{ 
-  float:left; 
-  display:inline; 
-  width: 49%;
+.homeButton {
+  position: fixed;
+  top: 45;
+  left: 0;
+}
+.helpButton{ 
+  position: fixed;
+  top: 41;
+  right: 0;
 }
 .helpButton button { 
   border-radius: 50%;
