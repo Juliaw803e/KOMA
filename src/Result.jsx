@@ -17,8 +17,9 @@ const Result = () => {
   const barStyle = {
     width: '100%', // Example width
     height: '30px', // Example height
-    backgroundColor: '#04AA6D', // Example background color
-    transition: '2s'
+    backgroundColor: '#B5C9A5', // Example background color
+    transition: '2s',
+    borderRadius: '20px'
     // Additional styles here
   };
 
@@ -28,9 +29,7 @@ const Result = () => {
     <div id="myProgress">
       <div id="myBar" style={barStyle}></div>
     </div>
-</div>     
-
-<p>{message}</p>
+</div>
 
 
 <div className= "kakor">
@@ -54,22 +53,24 @@ const Result = () => {
 {message === 'Mums, din kaka blev perfekt!' ? (
 
 <div className = "nachoBubble2">
-  <div className= "nacho2">
-  </div>
+  <div className="nacho2">
+          <div class="bubble bubble-bottom-left" contenteditable>Mums! Din kaka blev perfekt </div>
+      </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3"/>
   <div>
-    <button className= "bakaIgen" onClick={goToIngredientsPage}>Baka igen</button>
+    <button className= "bakaIgen" onClick={goToIngredientsPage}>BAKA IGEN</button>
   </div>
 </div>
 ) : (
   <>
    <div className="nachoBubble2">
     <div className="nacho2">
-    </div>
+          <div class="bubble bubble-bottom-left" contenteditable>Blä! Prova ändra ingredienserna</div>
+      </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3" />
       </div> 
     <div>
-      <button className="bakaIgen" onClick={goToIngredientsPage}> Försök igen</button>
+      <button className="bakaIgen" onClick={goToIngredientsPage}> FÖRSÖK IGEN</button>
     </div>
 </>
 )}

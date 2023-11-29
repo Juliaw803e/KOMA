@@ -26,6 +26,7 @@
 }
 
 .nacho2 {
+  padding-top: 4%;
   padding-left: 30%;
   height: 15vw;
 }
@@ -67,7 +68,7 @@
   margin-left: 25%;
   font-family: yaldevi;
   position: relative;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 24px;
   width: 60%;
   background: #fff;
@@ -150,11 +151,31 @@ h3 {
   display: flex; 
   align-items: center;
   justify-content: center;
-}
+  border-radius: 20px;
+} 
 
 #myProgress {
   width: 45%;
-  background-color: #ecd6d6;
+  background-color: #F4E7E1;
+  border: 3px solid #9bb685;
+  border-radius: 20px;
+  position: fixed; 
+  top: 50px;
+  display: flex; 
+}
+
+#progressBar{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+} 
+
+#myProgress {
+  width: 45%;
+  background-color: #F4E7E1;
+  border: 3px solid #9bb685;
+  border-radius: 20px;
   position: fixed; 
   top: 50px;
   display: flex; 
@@ -217,11 +238,11 @@ position:relative; left:20px; top:80px;
 }
 
 .kakor {
-  padding-top: 50px;
+  padding-top: 190px;
 }
 
 .nachoBubble2 {
-  padding-top: 180px;
+  padding-top: 200px;
   width: 80%;
 }
 
@@ -265,19 +286,26 @@ position:relative; left:20px; top:80px;
   border: 2px;
   cursor: pointer;
   font-family: justanotherhand;
-  font-size: 60px;
+  font-size: 50px;
   padding-right: 15%;
   padding-left: 15%;
-  padding-top: 2%;
+  padding-top: 1%;
   padding-bottom: 0;
+  margin-top: 20px;
   box-shadow: 3px 3px 5px rgb(122, 122, 122);
 }
 
 .nachoBubble2 {
-  padding-top: 10px;
-  padding-left: 30px; 
+  width: 70%;
+  margin-top: 160px;
+  padding-left: 50px; 
   padding-top: 8%;
   height: auto;
+}
+
+.resultBubble {
+  padding-left: 10%;
+  padding-top: 2%;
 }
 
 .målkakatext{

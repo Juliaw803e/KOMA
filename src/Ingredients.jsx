@@ -12,8 +12,9 @@ const Ingredients = ({
 const barStyle = {
   width: parseInt(currentIngredient, 10) * 16 + '%', // Example width
   height: '30px', // Example height
-  backgroundColor: '#04AA6D', // Example background color
-  transition: '2s'
+  backgroundColor: '#B5C9A5', // Example background color
+  transition: '2s',
+  borderRadius: '20px'
   // Additional styles here
 };
 
@@ -115,8 +116,6 @@ return (
           </div>
         </div>
       </div>
-
-    <img src="../images/kaka.png"></img>
 
     <div className="question-text">{<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}</div>
     <ul>
