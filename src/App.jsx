@@ -43,7 +43,6 @@ function IngredientsFunction() {
       <button onClick= {myFunction}>?</button>
       </div> 
 
-      <h1>Bild på den önskade kakan</h1>
       <img src="../images/nacho1.png" className="nacho1" />
   
   
