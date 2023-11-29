@@ -42,14 +42,6 @@ function IngredientsFunction() {
       <div className="helpButton"> 
       <button onClick= {myFunction}>?</button>
       </div> 
-<<<<<<< HEAD
-=======
-
-      <h1>Bild på den önskade kakan</h1>
-      <img src="../images/nacho1.png" className="nacho1" />
-  
-  
->>>>>>> parent of be9fa77 (försökte fixa ingredienssidan men failed)
 
     
       <div className="ingredients">
