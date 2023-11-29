@@ -138,13 +138,12 @@ return (
 
       {currentIngredient !== 0 && (
        <button className = "navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
-        {'\u2190'} Back
+         Back<img src="../images/pilv.png"></img>
       </button>
       )}
 
      <button className = "navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
-      Next {'→'}
-      </button>
+      <img src="../images/pilh.png"></img> Next</button>
     </div>
     </div>
   );
