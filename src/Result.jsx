@@ -30,13 +30,9 @@ const Result = () => {
     </div>
 </div>     
 
-<<<<<<< HEAD
 <p>{message}</p>
 
-<div>
 
-=======
->>>>>>> 83d45d93168039c214fa3b9e327bb757b7c60ba4
 <div className= "kakor">
 
   <div className="wantedKaka">
@@ -59,7 +55,6 @@ const Result = () => {
 
 <div className = "nachoBubble2">
   <div className= "nacho2">
-    <div class="bubble bubble-bottom-left" contenteditable>{message} </div>
   </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3"/>
   <div>
@@ -70,7 +65,6 @@ const Result = () => {
   <>
    <div className="nachoBubble2">
     <div className="nacho2">
-      <div className="bubble bubble-bottom-left" contentEditable>{message}</div>
     </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3" />
       </div> 
@@ -79,7 +73,6 @@ const Result = () => {
     </div>
 </>
 )}
-</div>
 
 </div>
 );
