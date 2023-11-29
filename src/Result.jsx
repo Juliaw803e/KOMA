@@ -32,6 +32,8 @@ const Result = () => {
 
 <p>{message}</p>
 
+<div>
+
 <div className= "kakor">
 
   <div className="wantedKaka">
@@ -74,6 +76,7 @@ const Result = () => {
     </div>
 </>
 )}
+</div>
 
 </div>
 );

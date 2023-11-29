@@ -38,7 +38,7 @@
   padding-left: 3%;
 }
 
-.nachoBubble, .nachoBubble2 {
+.nachoBubble {
   padding-top: 8%;
   width: 93%;
   height: auto;
@@ -288,4 +288,11 @@ background-repeat: no-repeat;
   padding-top: 2%;
   padding-bottom: 0;
   box-shadow: 3px 3px 5px rgb(122, 122, 122);
+}
+
+.nachoBubble2 {
+  padding-top: 10px;
+  padding-left: 30px; 
+  padding-top: 8%;
+  height: auto;
 }
