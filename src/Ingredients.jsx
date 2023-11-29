@@ -115,6 +115,9 @@ return (
           </div>
         </div>
       </div>
+
+    <img src="../images/kaka.png"></img>
+
     <div className="question-text">{<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}</div>
     <ul>
       {question[currentIngredient].options.map((option) => ( // map function som renderar en lista med alternativ. key hjälper att rendera 
@@ -138,13 +141,12 @@ return (
 
       {currentIngredient !== 0 && (
        <button className = "navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
-        {'\u2190'} Back
+         Back<img src="../images/pilv.png"></img>
       </button>
       )}
 
      <button className = "navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
-      Next {'→'}
-      </button>
+      <img src="../images/pilh.png"></img> Next</button>
     </div>
     </div>
   );
