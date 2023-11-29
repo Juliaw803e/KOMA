@@ -96,20 +96,6 @@
   background-color: #F4E7E1;
 }
 
-ul {
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  color: black;
-  text-align: center;
-  text-decoration: none;
-}
-
 h3 {
   flex-direction: left;
 }
@@ -218,13 +204,21 @@ input[type="radio"] {
 }
 .navigation-button-right{
 background-color: transparent;
+<<<<<<< HEAD
 position:relative; left:20px; top:80px;
+=======
+position:relative; left:15px; top:100px;
+>>>>>>> parent of b744d79 (Merge branch 'main' of https://github.com/Juliaw803e/KOMA)
 }
 
 
 .navigation-button-left{
 background-color: transparent;
+<<<<<<< HEAD
 position:relative; left:20px; top:80px;
+=======
+position:relative; left:15px; top:100px;
+>>>>>>> parent of b744d79 (Merge branch 'main' of https://github.com/Juliaw803e/KOMA)
 }
 
 .kakor {
