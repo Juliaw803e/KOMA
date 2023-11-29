@@ -14,11 +14,19 @@ const Result = () => {
     navigate('/ingredients');
   };
 
-return (
+  const barStyle = {
+    width: '100%', // Example width
+    height: '30px', // Example height
+    backgroundColor: '#04AA6D', // Example background color
+    transition: '2s'
+    // Additional styles here
+  };
+
+  return (
 <div>
   <div id="progressBar">
     <div id="myProgress">
-      <div id="myBar"></div>
+      <div id="myBar" style={barStyle}></div>
     </div>
   </div>  
 
