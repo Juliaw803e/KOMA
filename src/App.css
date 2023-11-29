@@ -99,20 +99,6 @@
   background-color: #F4E7E1;
 }
 
-ul {
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  color: black;
-  text-align: center;
-  text-decoration: none;
-}
-
 h3 {
   flex-direction: left;
 }
@@ -177,6 +163,16 @@ h3 {
   background-color: #04AA6D;
   top: 0px;
 }
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio-options-container {
+  display: flex;
+}
+
   /* Result page */
 
 .result {
