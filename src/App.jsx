@@ -12,7 +12,7 @@ function Home() {
       </div> 
 
       <div className="logo">
-      <img src="../images/logo (3).png" alt="logo" className="logo"/>
+        <img src="../images/logo (3).png" alt="logo" className="logo"/>
       </div>
       <div className="nachoBubble">
     
@@ -42,14 +42,16 @@ function IngredientsFunction() {
       <div className="helpButton"> 
       <button onClick= {myFunction}>?</button>
       </div> 
-
-      <h1>Bild på den önskade kakan</h1>
-      <img src="../images/nacho1.png" className="nacho1" />
   
   
 
       <div className="ingredients">
+
+      <h2>Önskad kaka</h2>
+      <img src="../images/nacho1.png" className="nacho1" />
+
         <Ingredients
+        
           ingredientResponses={ingredientResponses}
           setIngredientResponses={setIngredientResponses}
         />
