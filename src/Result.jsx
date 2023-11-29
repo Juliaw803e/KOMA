@@ -31,9 +31,15 @@ const Result = () => {
     </div>
 </div>
 
+<div className="containerText">
+  <div>
+    <h2 className="smalltext"> Önskad kaka</h2>
+  </div>
+  <div>
+    <h2 className="smalltext"> Din kaka</h2></div>
+</div>
 
 <div className= "kakor">
-
   <div className="wantedKaka">
       <img src="../images/kaka.png" alt="logo" className="wanted"/>
   </div>

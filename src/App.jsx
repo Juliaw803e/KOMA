@@ -43,7 +43,7 @@ function IngredientsFunction() {
       <button onClick= {myFunction}>?</button>
       </div> 
 
-      <h2 className="målkakatext"> Önskad kaka</h2>
+      <h2 className="malkakatext"> Önskad kaka</h2>
       <img src="../images/kaka.png" alt="logo" className="kakaingred"/>
 
     
