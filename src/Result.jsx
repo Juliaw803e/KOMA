@@ -28,10 +28,7 @@ const Result = () => {
     <div id="myProgress">
       <div id="myBar" style={barStyle}></div>
     </div>
-  </div>  
-
-<p>{message}</p>
-
+  </div> 
 
 {message === 'Mums, din kaka blev perfekt!' ? (
 
@@ -40,7 +37,8 @@ const Result = () => {
     <div class="bubble bubble-bottom-left" contenteditable> {message} </div>
   </div>
     <img src="../images/nacho1.png" alt="nacho1" className="nacho1"/>
-</div>
+    <button className="bakaIgen" onClick={goToIngredientsPage}> Baka en ny kaka</button>
+    </div>
 ) : (
   <>
    <div className="nachoBubble2">
