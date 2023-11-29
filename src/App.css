@@ -140,11 +140,6 @@ h3 {
   line-height: 17px; 
 }
 
-.option {
-
-}
-
-
 .idealcookieText {
   width: 147px;
   height: 31px;
@@ -190,12 +185,15 @@ h3 {
   display:inline; 
   width: 49%;
 }
-
-.helpButton {
-  background-image: url("../images/question.png");
-  background-repeat: no-repeat;
+.helpButton button { 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;              /* Diameter of the circle */
+  height: 50px;
+  background-color: #866F85;   
 }
-
 .navigation-button-right{
   background: linear-gradient(
     -135deg,
