@@ -30,8 +30,6 @@ const Result = () => {
     </div>
 </div>     
 
-<p>{message}</p>
-
 <div className= "kakor">
 
   <div className="wantedKaka">

@@ -115,6 +115,9 @@ return (
           </div>
         </div>
       </div>
+
+    <img src="../images/kaka.png"></img>
+
     <div className="question-text">{<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}</div>
     <ul>
       {question[currentIngredient].options.map((option) => ( // map function som renderar en lista med alternativ. key hjälper att rendera 
