@@ -26,6 +26,7 @@
 }
 
 .nacho2 {
+  padding-top: 4%;
   padding-left: 30%;
   height: 15vw;
 }
@@ -67,7 +68,7 @@
   margin-left: 25%;
   font-family: yaldevi;
   position: relative;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 24px;
   width: 60%;
   background: #fff;
@@ -96,6 +97,20 @@
   background-color: #F4E7E1;
 }
 
+ul {
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
 h3 {
   flex-direction: left;
 }
@@ -116,7 +131,8 @@ h3 {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 17px; 
+  line-height: 17px;
+  position:relative; left:50px; top:50px;
 }
 
 .idealcookieText {
@@ -135,11 +151,31 @@ h3 {
   display: flex; 
   align-items: center;
   justify-content: center;
-}
+  border-radius: 20px;
+} 
 
 #myProgress {
   width: 45%;
-  background-color: #ffffff;
+  background-color: #F4E7E1;
+  border: 3px solid #9bb685;
+  border-radius: 20px;
+  position: fixed; 
+  top: 50px;
+  display: flex; 
+}
+
+#progressBar{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+} 
+
+#myProgress {
+  width: 45%;
+  background-color: #F4E7E1;
+  border: 3px solid #9bb685;
+  border-radius: 20px;
   position: fixed; 
   top: 50px;
   display: flex; 
@@ -159,6 +195,7 @@ input[type="radio"] {
 
 .radio-options-container {
   display: flex;
+  position:relative; left:100px; top:50px;
 }
 
   /* Result page */
@@ -191,19 +228,21 @@ input[type="radio"] {
 }
 .navigation-button-right{
 background-color: transparent;
+position:relative; left:20px; top:80px;
 }
 
 
 .navigation-button-left{
 background-color: transparent;
+position:relative; left:20px; top:80px;
 }
 
 .kakor {
-  padding-top: 50px;
+  padding-top: 190px;
 }
 
 .nachoBubble2 {
-  padding-top: 180px;
+  padding-top: 200px;
   width: 80%;
 }
 
@@ -247,17 +286,41 @@ background-color: transparent;
   border: 2px;
   cursor: pointer;
   font-family: justanotherhand;
-  font-size: 60px;
+  font-size: 50px;
   padding-right: 15%;
   padding-left: 15%;
-  padding-top: 2%;
+  padding-top: 1%;
   padding-bottom: 0;
+  margin-top: 20px;
   box-shadow: 3px 3px 5px rgb(122, 122, 122);
 }
 
 .nachoBubble2 {
-  padding-top: 10px;
-  padding-left: 30px; 
+  width: 70%;
+  margin-top: 160px;
+  padding-left: 50px; 
   padding-top: 8%;
   height: auto;
+}
+
+.resultBubble {
+  padding-left: 10%;
+  padding-top: 2%;
+}
+
+.målkakatext{
+  width: 300px;
+  height: 87px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Yaldevi Colombo SemiBold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  position:relative; left:60px; top:110px;
+}
+
+.kakaingred{
+  position:relative; left:15px; top:40px;
 }

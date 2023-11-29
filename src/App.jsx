@@ -40,8 +40,11 @@ function IngredientsFunction() {
       <a className= "homeButton" href="/"><img src="../images/house.png"></img></a>
 
       <div className="helpButton"> 
-        <button onClick= {myFunction}>?</button>
+      <button onClick= {myFunction}>?</button>
       </div> 
+
+      <h2 className="målkakatext"> Önskad kaka</h2>
+      <img src="../images/kaka.png" alt="logo" className="kakaingred"/>
 
     
       <div className="ingredients">
