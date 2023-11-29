@@ -32,25 +32,43 @@ const Result = () => {
 
 <p>{message}</p>
 
+<div className= "kakor">
+
+  <div className="wantedKaka">
+      <img src="../images/kaka.png" alt="logo" className="wanted"/>
+  </div>
+
+  {message === 'Mums, din kaka blev perfekt!' ? (
+  <div className= "braKakan">
+    <img src="../images/kaka.png" alt="kaka" className="bra"/>
+  </div>
+) : (
+  <div className= "badKakan">
+    <img src="../images/kaka.png" alt="kaka" className="bad"/>
+  </div>
+)}
+
+</div>
 
 {message === 'Mums, din kaka blev perfekt!' ? (
 
 <div className = "nachoBubble2">
-  <div class= "nacho2">
+  <div className= "nacho2">
     <div class="bubble bubble-bottom-left" contenteditable>Muuums </div>
   </div>
-    <img src="../images/nacho1.png" alt="nacho1" className="nacho1"/>
+    <img src="../images/nacho1.png" alt="nacho3" className="nacho3"/>
+  <div>
+    <button className= "bakaIgen" onClick={goToIngredientsPage}>Baka igen</button>
+  </div>
 </div>
 ) : (
   <>
    <div className="nachoBubble2">
     <div className="nacho2">
-      <div className="bubble bubble-bottom-left" contentEditable>
-        Bläääää
-      </div>
+      <div className="bubble bubble-bottom-left" contentEditable>Bläääää</div>
     </div>
-    <img src="../images/nacho1.png" alt="nacho1" className="nacho1" />
-    </div>
+    <img src="../images/nacho1.png" alt="nacho3" className="nacho3" />
+      </div> 
     <div>
       <button className="bakaIgen" onClick={goToIngredientsPage}> Försök igen</button>
     </div>

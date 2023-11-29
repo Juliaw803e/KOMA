@@ -90,9 +90,6 @@
   bottom: -24px;
 }
 
-
-
-
 .FirstPage {
   height: 852px;
   width: 393px;
@@ -180,6 +177,10 @@ h3 {
   height: 852px ;
 }
 
+.bakaIgen {
+  padding-bottom: 0;
+}
+
 .homeButton, .helpButton{ 
   float:left; 
   display:inline; 
@@ -201,17 +202,17 @@ h3 {
     #9A7D63 22px,
     #9A7D63 100%
 )
-top right (
+top right,
 linear-gradient(
     -45deg,
     transparent 22px,
     #9A7D63 22px,
     #9A7D63 100%
 )
+
 bottom right;
 background-size: 100% 50%;
 background-repeat: no-repeat;
-)
 }
 
 
@@ -232,4 +233,42 @@ linear-gradient(
 bottom right;
 background-size: 100% 50%;
 background-repeat: no-repeat;
+}
+
+.kakor {
+  padding-top: 50px;
+}
+
+.nachoBubble2 {
+  padding-top: 180px;
+  width: 80%;
+}
+
+.wantedKaka, .braKakan, .badKakan {
+  float: left;
+  width: 38%;
+}
+
+.wanted {
+  margin-left: 10%;
+  height: 170px;
+}
+
+.bra {
+  margin-left: 40%;
+  height: 170px;
+}
+
+.bad {
+  margin-left: 40%;
+  height: 170px;
+}
+
+.nacho3 {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin-left: 0;
+  padding-right: 40%;
+  padding-left: 3%;
 }
