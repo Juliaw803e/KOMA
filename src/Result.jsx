@@ -54,7 +54,7 @@ const Result = () => {
 
 <div className = "nachoBubble2">
   <div className= "nacho2">
-    <div class="bubble bubble-bottom-left" contenteditable>Muuums </div>
+    <div class="bubble bubble-bottom-left" contenteditable>{message} </div>
   </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3"/>
   <div>
@@ -65,7 +65,7 @@ const Result = () => {
   <>
    <div className="nachoBubble2">
     <div className="nacho2">
-      <div className="bubble bubble-bottom-left" contentEditable>Bläääää</div>
+      <div className="bubble bubble-bottom-left" contentEditable>{message}</div>
     </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3" />
       </div> 
