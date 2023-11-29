@@ -195,3 +195,41 @@ h3 {
   background-image: url("../images/question.png");
   background-repeat: no-repeat;
 }
+
+.navigation-button-right{
+  background: linear-gradient(
+    -135deg,
+    transparent 22px,
+    #9A7D63 22px,
+    #9A7D63 100%
+)
+top right,
+linear-gradient(
+    -45deg,
+    transparent 22px,
+    #9A7D63 22px,
+    #9A7D63 100%
+)
+bottom right;
+background-size: 100% 50%;
+background-repeat: no-repeat;
+}
+
+.navigation-button-left{
+background: linear-gradient(
+  135deg,
+  transparent 22px,
+  #9A7D63 22px,
+  #9A7D63 100%
+)
+top right,
+linear-gradient(
+  45deg,
+  transparent 22px,
+  #9A7D63 22px,
+  #9A7D63 100%
+)
+bottom right;
+background-size: 100% 50%;
+background-repeat: no-repeat;
+}
