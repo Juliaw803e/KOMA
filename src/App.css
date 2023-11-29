@@ -202,7 +202,7 @@ h3 {
     #9A7D63 22px,
     #9A7D63 100%
 )
-top right (
+top right,
 linear-gradient(
     -45deg,
     transparent 22px,
@@ -212,7 +212,7 @@ linear-gradient(
 bottom right;
 background-size: 100% 50%;
 background-repeat: no-repeat;
-)
+
 }
 
 

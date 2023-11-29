@@ -29,7 +29,7 @@ function Home() {
 }
 
 function myFunction() {
-  alert("Hjälprutan är här!");
+  alert("Såhär spelar du! Välj rätt mängd av vardera ingrediens för att baka kakan som visas :)");
 }
 
 function IngredientsFunction() {
@@ -44,6 +44,10 @@ function IngredientsFunction() {
       </div> 
 
       <h1>Bild på den önskade kakan</h1>
+      <img src="../images/nacho1.png" className="nacho1" />
+  
+  
+
       <div className="ingredients">
         <Ingredients
           ingredientResponses={ingredientResponses}
