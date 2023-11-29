@@ -106,6 +106,7 @@ const handleNext = () => {
 
 
 return (
+  <div className="ingredientPages">
     <div>
       <div id="progressBar">
         <div id="myProgress">
@@ -144,6 +145,7 @@ return (
      <button className = "navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
       Next {'→'}
       </button>
+    </div>
     </div>
   );
 };
