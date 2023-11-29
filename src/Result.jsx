@@ -24,25 +24,38 @@ const Result = () => {
 
   return (
 <div>
-<div id="progressBar">
+  <div id="progressBar">
     <div id="myProgress">
       <div id="myBar" style={barStyle}></div>
     </div>
-  </div>
+  </div>  
 
-<h2>Lägg in färdig kaka samt målkakan här</h2>
 <p>{message}</p>
 
+
 {message === 'Mums, din kaka blev perfekt!' ? (
-        <div>
-          <h5> rättsvarknapp som ska skcika till hem och göra ny kaka</h5>
-          <button className="bakaEnTill" onClick={goToIngredientsPage}>Baka en ny kaka</button>
-        </div>
-      ) : (
-        <div>
-          <button className="bakaIgen" onClick={goToIngredientsPage}>Försök igen</button>
-        </div>
-      )}
+
+<div className = "nachoBubble2">
+  <div class= "nacho2">
+    <div class="bubble bubble-bottom-left" contenteditable>Muuums </div>
+  </div>
+    <img src="../images/nacho1.png" alt="nacho1" className="nacho1"/>
+</div>
+) : (
+  <>
+   <div className="nachoBubble2">
+    <div className="nacho2">
+      <div className="bubble bubble-bottom-left" contentEditable>
+        Bläääää
+      </div>
+    </div>
+    <img src="../images/nacho1.png" alt="nacho1" className="nacho1" />
+    </div>
+    <div>
+      <button className="bakaIgen" onClick={goToIngredientsPage}> Försök igen</button>
+    </div>
+</>
+)}
 
 </div>
 );
