@@ -105,7 +105,8 @@ const Ingredients = ({
   };
 
 
-  return (
+return (
+  <div className="ingredientPages">
     <div>
       <div id="progressBar">
         <div id="myProgress">
@@ -135,14 +136,14 @@ const Ingredients = ({
         ))}
       </div>
       {currentIngredient !== 0 && (
-        <button className="navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
-          {'\u2190'} Back
-        </button>
+       <button className = "navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
+         Back<img src="../images/pilv.png"></img>
+      </button>
       )}
 
-      <button className="navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
-        Next {'→'}
-      </button>
+     <button className = "navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
+      <img src="../images/pilh.png"></img> Next</button>
+    </div>
     </div>
   );
 };

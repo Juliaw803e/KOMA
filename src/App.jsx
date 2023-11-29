@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="FirstPage">
       <div className="helpButton"> 
-      <button onClick= {myFunction}>Hjälpknapp</button>
+        <button onClick= {myFunction}>?</button>
       </div> 
 
       <div className="logo">
@@ -29,7 +29,7 @@ function Home() {
 }
 
 function myFunction() {
-  alert("Hjälprutan är här!");
+  alert("Såhär spelar du! Välj rätt mängd av vardera ingrediens för att baka kakan som visas :)");
 }
 
 function IngredientsFunction() {
@@ -37,13 +37,13 @@ function IngredientsFunction() {
 
   return (
     <div>
-      <a href="/"><h3> HOME</h3></a>
+      <a className= "homeButton" href="/"><img src="../images/house.png"></img></a>
 
       <div className="helpButton"> 
-      <button onClick= {myFunction}>Hjälpknapp</button>
+      <button onClick= {myFunction}>?</button>
       </div> 
 
-      <h1>Bild på den önskade kakan</h1>
+    
       <div className="ingredients">
         <Ingredients
           ingredientResponses={ingredientResponses}
@@ -62,7 +62,7 @@ function ResultFunction(){
       <div className="result">
         <div className="header"> 
           <div className="helpButton">
-            <button onClick= {myFunction}></button>
+            <button onClick= {myFunction}>?</button>
           </div>
           <div className="homeButton">
             <a href="/"><img src="../images/house.png"></img></a>
