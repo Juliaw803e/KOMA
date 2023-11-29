@@ -44,7 +44,7 @@
   height: auto;
 }
 
-.baka, .bakaIgen, .bakaEnTill {
+.baka, .bakaEnTill {
   margin-top: 5%;
   display: inline-block;
   text-align: center;
@@ -184,7 +184,7 @@ h3 {
   right: 0;
 }
 
-.helpButto button { 
+.helpButton button { 
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -269,4 +269,23 @@ background-repeat: no-repeat;
   margin-left: 0;
   padding-right: 40%;
   padding-left: 3%;
+}
+
+.bakaIgen {
+  margin-top: 5%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color:#F1CB9E;
+  color: #3f2b12;
+  border-radius: 5px;
+  border: 2px;
+  cursor: pointer;
+  font-family: justanotherhand;
+  font-size: 60px;
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-top: 2%;
+  padding-bottom: 0;
+  box-shadow: 3px 3px 5px rgb(122, 122, 122);
 }
