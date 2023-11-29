@@ -92,7 +92,7 @@
 }
 
 .FirstPage {
-  height: 100vw;
+  height: 852px;
   width: 393px;
   background-color: #F4E7E1;
 }
@@ -308,7 +308,7 @@ position:relative; left:20px; top:80px;
   padding-top: 2%;
 }
 
-.målkakatext{
+.mÃ¥lkakatext{
   width: 300px;
   height: 87px;
   flex-shrink: 0;
