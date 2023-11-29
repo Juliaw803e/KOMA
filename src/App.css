@@ -116,20 +116,8 @@ h3 {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 17px; 
-}
-
-.målkakatext{
-  width: 300px;
-  height: 87px;
-  flex-shrink: 0;
-  color: #000;
-  font-family: Yaldevi Colombo SemiBold;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
   line-height: 17px;
-  position:relative; left:50px; top:80px;
+  position:relative; left:50px; top:50px;
 }
 
 .idealcookieText {
@@ -152,7 +140,7 @@ h3 {
 
 #myProgress {
   width: 45%;
-  background-color: #ffffff;
+  background-color: #ecd6d6;
   position: fixed; 
   top: 50px;
   display: flex; 
@@ -172,6 +160,7 @@ input[type="radio"] {
 
 .radio-options-container {
   display: flex;
+  position:relative; left:100px; top:50px;
 }
 
   /* Result page */
@@ -275,4 +264,21 @@ position:relative; left:15px; top:100px;
   padding-left: 30px; 
   padding-top: 8%;
   height: auto;
+}
+
+.målkakatext{
+  width: 300px;
+  height: 87px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Yaldevi Colombo SemiBold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  position:relative; left:60px; top:110px;
+}
+
+.kakaingred{
+  position:relative; left:15px; top:40px;
 }
