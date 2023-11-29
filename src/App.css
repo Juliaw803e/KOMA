@@ -96,6 +96,20 @@
   background-color: #F4E7E1;
 }
 
+ul {
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
 h3 {
   flex-direction: left;
 }
@@ -193,13 +207,11 @@ input[type="radio"] {
 }
 .navigation-button-right{
 background-color: transparent;
-position:relative; left:15px; top:100px;
 }
 
 
 .navigation-button-left{
 background-color: transparent;
-position:relative; left:15px; top:100px;
 }
 
 .kakor {
