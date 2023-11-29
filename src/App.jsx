@@ -42,6 +42,8 @@ function IngredientsFunction() {
       <div className="helpButton"> 
       <button onClick= {myFunction}>?</button>
       </div> 
+
+      <img src="../images/nacho1.png" className="nacho1" />
   
   
 
