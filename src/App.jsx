@@ -44,7 +44,7 @@ function IngredientsFunction() {
       </div> 
 
       <h2 className="målkakatext"> Önskad kaka</h2>
-      <img src="../images/kaka.png" alt="logo" className="kakaingred"/>
+      <img src="../images/kaka.png" alt="logo"/>
 
     
       <div className="ingredients">
