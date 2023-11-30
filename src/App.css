@@ -119,6 +119,8 @@ h3 {
   font-weight: 600;
   line-height: 17px;
   position:relative; left:50px; top:50px;
+  margin-bottom: 5vW;
+  line-height: 1;
 }
 
 .idealcookieText {
