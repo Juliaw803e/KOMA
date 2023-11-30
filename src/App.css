@@ -213,6 +213,7 @@ input[type="radio"] {
   width: 50px;              /* Diameter of the circle */
   height: 50px;
   background-color: #866F85;   
+  color: white;
 }
 .navigation-button-right{
 background-color: transparent;
