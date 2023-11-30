@@ -98,9 +98,12 @@ const handleNext = () => {
 
     const incorrectIngredientsList = incorrectQuestions.map(index => ingredientsArray[index]);
     const resultMessage = allCorrect
-      ? "Mums, din kaka blev perfekt!" //if allCorrect == true 
-      : `Blä! Testa att ändra ${incorrectIngredientsList.join(', ')}`; //if allCorrect == false 
-
+    ? "Mums, din kaka blev perfekt!"
+    : `Blä! Testa att ändra ${
+        incorrectIngredientsList.length > 1
+          ? `${incorrectIngredientsList.slice(0, -1).join(', ')} och ${incorrectIngredientsList.slice(-1)}`
+          : incorrectIngredientsList[0]
+      }`;
     navigate('/result', { state: { message: resultMessage } }); //skicka message i state. Message är resultmessage som kan ha två olika fall beroende på om allcorrect == true/false
   }
 };
