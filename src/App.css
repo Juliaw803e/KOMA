@@ -113,7 +113,7 @@ h3 {
   height: 87px;
   flex-shrink: 0;
   color: #000;
-  font-family: Yaldevi Colombo SemiBold;
+  font-family: yaldevi;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -128,7 +128,7 @@ h3 {
   height: 31px;
   flex-shrink: 0;
   color: #000;
-  font-family: Yaldevi Colombo SemiBold;
+  font-family: yaldevi Colombo SemiBold;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -302,7 +302,7 @@ position:relative; left:20px; top:70px;
   height: 87px;
   flex-shrink: 0;
   color: #000;
-  font-family: Yaldevi Colombo SemiBold;
+  font-family: yaldevi;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
