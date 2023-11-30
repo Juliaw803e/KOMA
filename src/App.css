@@ -183,7 +183,7 @@ input[type="radio"] {
 
 .radio-options-container {
   display: flex;
-  position:relative; left:100px; top:50px;
+  position:relative; left:20px; top:50px;
 }
 
   /* Result page */

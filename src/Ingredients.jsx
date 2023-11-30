@@ -136,7 +136,7 @@ return (
                 <img
                   src={option.image}
                   alt={`Option ${option.id}`}
-                  style={{ width: '100%', height: '100%'  }} // Adjust width and height accordingly
+                  style={{ width: '90%', height: '90%'  }} // Adjust width and height accordingly
               />
               </label>
             </div>
