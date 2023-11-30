@@ -207,6 +207,7 @@ input[type="radio"] {
 
 .helpButton button { 
   border-radius: 50%;
+  border: 1px solid #866F85;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -324,7 +325,7 @@ position:relative; left:20px; top:70px;
   width: 300px;
   height: 87px;
   color: #000;
-  font-family: Yaldevi Colombo SemiBold;
+  font-family: yaldevi;
   font-size: 23px;
   font-style: normal;
   font-weight: 600;
