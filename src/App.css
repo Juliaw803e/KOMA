@@ -119,6 +119,8 @@ h3 {
   font-weight: 600;
   line-height: 17px;
   position:relative; left:50px; top:50px;
+  margin-bottom: 5vW;
+  line-height: 1;
 }
 
 .idealcookieText {
@@ -316,15 +318,46 @@ position:relative; left:20px; top:70px;
   flex-direction: row;
   display:flex;
   padding-top: 40%; 
-  position:relative; left:15px; top:30px;
+  position:relative; left:15px; top:60px;
 }
 .smalltext{
   width: 300px;
   height: 87px;
   color: #000;
   font-family: Yaldevi Colombo SemiBold;
-  font-size: 24px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 600;
   line-height: 17px;
+<<<<<<< HEAD
+}
+
+/* ingredients pictures */
+
+
+/* Style the container for each question */
+.question-container {
+  margin-bottom: 20px;
+}
+
+/* Style the images within the question container */
+.question-container img {
+  max-width: 100%; /* Make sure images don't exceed their container */
+  border: 2px solid #ccc; /* Add a border for better visibility */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+}
+
+/* Optional: Style for correct and incorrect options */
+.correct-answer {
+  border-color: #2ecc71; /* Green border for correct answers */
+}
+
+.incorrect-answer {
+  border-color: #e74c3c; /* Red border for incorrect answers */
+=======
+  width: fit-content; 
+  margin-left: 10vw;
+  margin-right: 5vw;
+>>>>>>> 3b3e4ccd08246f87c21b2087728b9aa97a57ca5a
 }
