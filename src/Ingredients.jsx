@@ -107,46 +107,6 @@ const handleNext = () => {
 
 
 return (
-  // <div className="ingredientPages">
-  //   <div>
-  //     <div id="progressBar">
-  //       <div id="myProgress">
-  //         <div id="myBar" style={barStyle}>
-  //         </div>
-  //   <div className="question-text">{<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}</div>
-  //   <div className="question-text">{<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}</div>
-  //     <div className="radio-options-container"> 
-  //       {question[currentIngredient].options.map((option) => (
-  //         <div key={option.id} className="radio-option">
-  //           <label>
-  //             <input
-  //               type="radio"
-  //               value={option.id}
-  //               checked={ingredientResponses[currentIngredient] === option.id}
-  //               onChange={(e) => {
-  //                 const newResponses = [...ingredientResponses];
-  //                 newResponses[currentIngredient] = parseInt(e.target.value);
-  //                 setIngredientResponses(newResponses);
-  //               }}
-  //             />
-  //             <img src={option.image} alt={`Option ${option.id}`} />
-  //           </label>
-  //         </div>
-  //       ))}
-  //     </div>
-
-  //     {currentIngredient !== 0 && (
-  //      <button className = "navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
-  //        Back<img src="../images/pilv.png"></img>
-  //     </button>
-  //     )}
-
-  //    <button className = "navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
-  //     <img src="../images/pilh.png"></img> Next</button>
-  //   </div>
-  //   </div>
-  // );
-
   
     <div className="ingredientPages">
       <div>
@@ -172,7 +132,12 @@ return (
                     setIngredientResponses(newResponses); //state uppdateras med setIngrediensResponses
                   }}
                 />
-                <img src={option.image} alt={`Option ${option.id}`} />
+                
+                <img
+                  src={option.image}
+                  alt={`Option ${option.id}`}
+                  style={{ width: '100%', height: '100%'  }} // Adjust width and height accordingly
+              />
               </label>
             </div>
           ))}
