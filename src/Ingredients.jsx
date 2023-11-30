@@ -142,18 +142,19 @@ return (
             </div>
           ))}
         </div>
+        <div className="nav-button-box">
+          {currentIngredient !== 0 && (
+            <button className="navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
+              <img src="../images/pilv.png" alt="Back" />
+            </button>
+          )}
   
-        {currentIngredient !== 0 && (
-          <button className="navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
-            Back<img src="../images/pilv.png" alt="Back" />
+          <button className="navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
+            <img src="../images/pilh.png" alt="Next" />
           </button>
-        )}
-  
-        <button className="navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
-          <img src="../images/pilh.png" alt="Next" /> Next
-        </button>
+          </div>
+        </div>
       </div>
-    </div>
   );
   
 
