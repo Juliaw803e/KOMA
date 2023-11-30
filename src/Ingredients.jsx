@@ -47,8 +47,8 @@ const question = [
         text: "Välj hur många ägg",
         options: [
             { id: 9, image: '../images/ingredients/oneegg.png', isCorrect: true },
-            { id: 10, image: '../images/ingredients/twoegg.png', isCorrect: false },
-            { id: 11, image: '../images/ingredients/threeegg.png', isCorrect: false },
+            { id: 10, image: '../images/ingredients/twoeggs.png', isCorrect: false },
+            { id: 11, image: '../images/ingredients/threeeggs.png', isCorrect: false },
         ]
     },
     {
@@ -98,9 +98,12 @@ const handleNext = () => {
 
     const incorrectIngredientsList = incorrectQuestions.map(index => ingredientsArray[index]);
     const resultMessage = allCorrect
-      ? "Mums, din kaka blev perfekt!" //if allCorrect == true 
-      : `Blä! Testa att ändra ${incorrectIngredientsList.join(', ')}`; //if allCorrect == false 
-
+    ? "Mums, din kaka blev perfekt!"
+    : `Blä! Testa att ändra ${
+        incorrectIngredientsList.length > 1
+          ? `${incorrectIngredientsList.slice(0, -1).join(', ')} och ${incorrectIngredientsList.slice(-1)}`
+          : incorrectIngredientsList[0]
+      }`;
     navigate('/result', { state: { message: resultMessage } }); //skicka message i state. Message är resultmessage som kan ha två olika fall beroende på om allcorrect == true/false
   }
 };
@@ -142,18 +145,19 @@ return (
             </div>
           ))}
         </div>
+        <div className="nav-button-box">
+          {currentIngredient !== 0 && (
+            <button className="navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
+              <img src="../images/pilv.png" alt="Back" />
+            </button>
+          )}
   
-        {currentIngredient !== 0 && (
-          <button className="navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
-            Back<img src="../images/pilv.png" alt="Back" />
+          <button className="navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
+            <img src="../images/pilh.png" alt="Next" />
           </button>
-        )}
-  
-        <button className="navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
-          <img src="../images/pilh.png" alt="Next" /> Next
-        </button>
+          </div>
+        </div>
       </div>
-    </div>
   );
   
 
