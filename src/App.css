@@ -97,20 +97,6 @@
   background-color: #F4E7E1;
 }
 
-ul {
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  color: black;
-  text-align: center;
-  text-decoration: none;
-}
-
 h3 {
   flex-direction: left;
 }

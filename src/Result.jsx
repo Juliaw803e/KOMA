@@ -60,7 +60,7 @@ const Result = () => {
 
 <div className = "nachoBubble2">
   <div className="nacho2">
-          <div class="bubble bubble-bottom-left" contenteditable>Mums! Din kaka blev perfekt </div>
+          <div class="bubble bubble-bottom-left" contenteditable><p>{message}</p> </div>
       </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3"/>
   <div>
@@ -71,7 +71,7 @@ const Result = () => {
   <>
    <div className="nachoBubble2">
     <div className="nacho2">
-          <div class="bubble bubble-bottom-left" contenteditable>Blä! Prova ändra ingredienserna</div>
+          <div class="bubble bubble-bottom-left" contenteditable><p>{message}</p></div>
       </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3" />
       </div> 
