@@ -107,48 +107,91 @@ const handleNext = () => {
 
 
 return (
-  <div className="ingredientPages">
-    <div>
-      <div id="progressBar">
-        <div id="myProgress">
-          <div id="myBar" style={barStyle}>
+  // <div className="ingredientPages">
+  //   <div>
+  //     <div id="progressBar">
+  //       <div id="myProgress">
+  //         <div id="myBar" style={barStyle}>
+  //         </div>
+  //   <div className="question-text">{<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}</div>
+  //   <div className="question-text">{<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}</div>
+  //     <div className="radio-options-container"> 
+  //       {question[currentIngredient].options.map((option) => (
+  //         <div key={option.id} className="radio-option">
+  //           <label>
+  //             <input
+  //               type="radio"
+  //               value={option.id}
+  //               checked={ingredientResponses[currentIngredient] === option.id}
+  //               onChange={(e) => {
+  //                 const newResponses = [...ingredientResponses];
+  //                 newResponses[currentIngredient] = parseInt(e.target.value);
+  //                 setIngredientResponses(newResponses);
+  //               }}
+  //             />
+  //             <img src={option.image} alt={`Option ${option.id}`} />
+  //           </label>
+  //         </div>
+  //       ))}
+  //     </div>
 
+  //     {currentIngredient !== 0 && (
+  //      <button className = "navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
+  //        Back<img src="../images/pilv.png"></img>
+  //     </button>
+  //     )}
+
+  //    <button className = "navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
+  //     <img src="../images/pilh.png"></img> Next</button>
+  //   </div>
+  //   </div>
+  // );
+
+  
+    <div className="ingredientPages">
+      <div>
+        <div id="progressBar">
+          <div id="myProgress">
+            <div id="myBar" style={barStyle}></div>
           </div>
         </div>
+        <div className="question-text">
+          <h2>{question[currentIngredient].text}</h2>  {/* renderar texten med vilken ingrediens */}
+        </div>
+        <div className="radio-options-container">
+          {question[currentIngredient].options.map((option) => ( //map-funktion som renderar en lista med alternativ. Key hjälper till att rendera 
+            <div key={option.id} className="radio-option">
+              <label>
+                <input
+                  type="radio" //radio button 
+                  value={option.id} //0,1,2
+                  checked={ingredientResponses[currentIngredient] === option.id}//kollar om currentIngredient i ingredientRespons array === id. Om de matchar så checkas knappen
+                  onChange={(e) => { //onchange updaterar statemed vad man valt 
+                    const newResponses = [...ingredientResponses];
+                    newResponses[currentIngredient] = parseInt(e.target.value); //en kopia av ingredientRespons array Skapas
+                    setIngredientResponses(newResponses); //state uppdateras med setIngrediensResponses
+                  }}
+                />
+                <img src={option.image} alt={`Option ${option.id}`} />
+              </label>
+            </div>
+          ))}
+        </div>
+  
+        {currentIngredient !== 0 && (
+          <button className="navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
+            Back<img src="../images/pilv.png" alt="Back" />
+          </button>
+        )}
+  
+        <button className="navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
+          <img src="../images/pilh.png" alt="Next" /> Next
+        </button>
       </div>
-
-    <div className="question-text">{<h2>{question[currentIngredient].text}</h2> /* renderar texten med vilken ingrediens */}</div>
-    <ul>
-      {question[currentIngredient].options.map((option) => ( // map function som renderar en lista med alternativ. key hjälper att rendera 
-        <li key={option.id}>
-          <label>
-            <input
-              type="radio" //radio button 
-              value={option.id} //0,1,2 
-              checked={ingredientResponses[currentIngredient] === option.id} //kollar om currentingredient i ingredientresponses array = id. Om de matchar så "check:as" (väljs) knappen
-              onChange={(e) => { //onchange uppdaterar state med vad man valt. 
-                const newResponses = [...ingredientResponses]; //en kopia av ingredienrespons array skapas 
-                newResponses[currentIngredient] = parseInt(e.target.value);
-                setIngredientResponses(newResponses); //state uppdateras med setIngredientResponse 
-                }}
-              />
-              <img src={option.image} alt={`Option ${option.id}`} />
-            </label>
-          </li>
-        ))}
-      </ul>
-
-      {currentIngredient !== 0 && (
-       <button className = "navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
-         Back<img src="../images/pilv.png"></img>
-      </button>
-      )}
-
-     <button className = "navigation-button-right" onClick={handleNext} disabled={ingredientResponses[currentIngredient] === undefined}>
-      <img src="../images/pilh.png"></img> Next</button>
-    </div>
     </div>
   );
+  
+
 };
 
 export default Ingredients;
