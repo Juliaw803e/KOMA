@@ -47,8 +47,8 @@ const question = [
         text: "Välj hur många ägg",
         options: [
             { id: 9, image: '../images/ingredients/oneegg.png', isCorrect: true },
-            { id: 10, image: '../images/ingredients/twoegg.png', isCorrect: false },
-            { id: 11, image: '../images/ingredients/threeegg.png', isCorrect: false },
+            { id: 10, image: '../images/ingredients/twoeggs.png', isCorrect: false },
+            { id: 11, image: '../images/ingredients/threeeggs.png', isCorrect: false },
         ]
     },
     {
