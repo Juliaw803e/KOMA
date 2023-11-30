@@ -22,41 +22,41 @@ const question = [
     {
         text: "Välj hur mycket mjöl",
         options: [
-            { id: 0, image: 'imageOne.jpg', isCorrect: false },
-            { id: 1, image: 'imageOne.jpg', isCorrect: true },
-            { id: 2, image: 'imageOne.jpg', isCorrect: false },
+            { id: 0, image: '../images/ingredients/2flour.png', isCorrect: false },
+            { id: 1, image: '../images/ingredients/3flour.png', isCorrect: true },
+            { id: 2, image: '../images/ingredients/5flour.png', isCorrect: false },
         ]   
     },
     {
         text: "Välj hur mycket socker",
         options: [
-            { id: 3, image: 'imageOne.jpg', isCorrect: true },
-            { id: 4, image: 'imageOne.jpg', isCorrect: false },
-            { id: 5, image: 'imageOne.jpg', isCorrect: false },
+            { id: 3, image: '../images/ingredients/2sugar.png', isCorrect: true },
+            { id: 4, image: '../images/ingredients/4sugar.png', isCorrect: false },
+            { id: 5, image: '../images/ingredients/6sugar.png', isCorrect: false },
         ]
     },
     {
         text: "Välj hur mycket smör",
         options: [
-            { id: 6, image: 'imageOne.jpg', isCorrect: false },
-            { id: 7, image: 'imageOne.jpg', isCorrect: true },
-            { id: 8, image: 'imageOne.jpg', isCorrect: false },
+            { id: 6, image: '../images/ingredients/50butter.png', isCorrect: false },
+            { id: 7, image: '../images/ingredients/75butter.png', isCorrect: true },
+            { id: 8, image: '../images/ingredients/100butter.png', isCorrect: false },
         ]
     },
     {
         text: "Välj hur många ägg",
         options: [
-            { id: 9, image: 'imageOne.jpg', isCorrect: true },
-            { id: 10, image: 'imageOne.jpg', isCorrect: false },
-            { id: 11, image: 'imageOne.jpg', isCorrect: false },
+            { id: 9, image: '../images/ingredients/oneegg.png', isCorrect: true },
+            { id: 10, image: '../images/ingredients/twoegg.png', isCorrect: false },
+            { id: 11, image: '../images/ingredients/threeegg.png', isCorrect: false },
         ]
     },
     {
         text: "Välj hur mycket chokladknappar",
         options: [
-            { id: 12, image: 'imageOne.jpg', isCorrect: false },
-            { id: 13, image: 'imageOne.jpg', isCorrect: false },
-            { id: 14, image: 'imageOne.jpg', isCorrect: true },
+            { id: 12, image: '../images/ingredients/20choc.png', isCorrect: false },
+            { id: 13, image: '../images/ingredients/40choc.png', isCorrect: false },
+            { id: 14, image: '../images/ingredients/60choc.png', isCorrect: true },
         ]
     },
     {
