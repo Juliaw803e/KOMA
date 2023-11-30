@@ -50,7 +50,7 @@ const Result = () => {
   </div>
 ) : (
   <div className= "badKakan">
-    <img src="../images/kaka.png" alt="kaka" className="bad"/>
+    <img src="../images/bränd kaka.png" alt="kaka" className="bad"/>
   </div>
 )}
 
