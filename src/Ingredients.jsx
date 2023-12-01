@@ -140,7 +140,7 @@ return (
                   src={option.image}
                   alt={`Option ${option.id}`}
                   style={{ width: '90%', height: '90%'  }} // Adjust width and height accordingly
-              />
+             />
               </label>
             </div>
           ))}
