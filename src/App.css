@@ -148,8 +148,9 @@ h3 {
   border: 3px solid #9bb685;
   border-radius: 20px;
   position: fixed; 
-  top: 50px;
-  display: flex; 
+  top: 3%;
+  display: flex;
+  left: 27%
 }
 
 #myBar {
@@ -179,13 +180,13 @@ input[type="radio"] {
 
 .homeButton {
   position: fixed;
-  top: 45;
-  left: 0;
+  top: 15px;
+  left: 10px;
 }
 .helpButton{ 
   position: fixed;
-  top: 41;
-  right: 0;
+  top: 12px;
+  right: 10px;
 }
 
 .helpButton button { 
@@ -221,7 +222,7 @@ input[type="radio"] {
 }
 
 .kakor {
-  padding-top: 10px;
+  padding-top: 2px;
 }
 
 .nachoBubble2 {
@@ -311,8 +312,8 @@ input[type="radio"] {
   display: flex;
   flex-direction: row;
   display:flex;
-  padding-top: 40%; 
-  position:relative; left:15px; top:60px;
+  padding-top: 10%; 
+  position:relative; left:15px; top:75px;
 }
 .smalltext{
   width: 300px;
