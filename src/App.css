@@ -15,6 +15,11 @@
   src: url('Inter-Regular.woff') format('woff');
 }
 
+@font-face {
+  font-family:inter-semibold;
+  src: url('Inter-SemiBold.woff') format('woff');
+}
+
 /* ?? */
 
 #root {
@@ -115,7 +120,6 @@ h3 {
   height: 852px ;
 }
 
-
 .question-text {
   width: 336px;
   height: 87px;
@@ -128,6 +132,8 @@ h3 {
   line-height: 17px;
   position:relative; left:50px; top:50px;
   line-height: 1;
+}
+.question-text-div {
   overflow: hidden; 
 }
 
@@ -225,6 +231,12 @@ input[type="radio"] {
   border:none;
   padding-left: 11vw;
   padding-right: 11vw;
+}
+
+.navigation-button-left:focus,
+.navigation-button-right:focus {
+  outline: none;
+  border: none;
 }
 
 .navigation-button-right {
