@@ -65,7 +65,8 @@ function IngredientsFunction() {
         />
       </div>
       <Modal show={showModal} onClose={handleCloseModal}>
-        <p>Help text for Ingredients</p>
+      <p className="rubrikHelp">Såhär spelar du! </p> 
+        <p className="textHelp"> Välj vad du tror är rätt mängd av ingrediensen för att få kakan som önskas</p>
       </Modal>
     </div>
   );
@@ -94,7 +95,8 @@ function ResultFunction() {
         />
 
         <Modal show={showModal} onClose={handleCloseModal}>
-          <p>Help text specific to the Result page</p>
+        <p className="rubrikHelp">Såhär spelar du!</p> 
+        <p className="textHelp"> Lyssna på vad Nacho säger!</p>
         </Modal>
       </div>
     </div>

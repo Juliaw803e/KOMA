@@ -376,6 +376,7 @@ input[type="radio"] {
 
 /* Modal Content */
 .modal-content {
+  position: relative; 
   background-color: #D6D3D3;
   margin: 50% auto; /* 15% from the top and centered */
   padding: 20px;
@@ -384,7 +385,6 @@ input[type="radio"] {
   height: 50%;
   border-radius: 30px;
   color: black;
-  font-family: inter;
   font-size: 20px;
   line-height: normal;
 }
@@ -395,9 +395,29 @@ input[type="radio"] {
 }
 .rubrikHelp {
   font-style: bold;
+  font-family: inter-semibold;
   font-weight: 600;
 }
 .textHelp {
   font-style: normal;
   font-weight: 400;
+  font-family: inter;
+}
+.close-button {
+  position: absolute;
+  top: -10px; /* Adjust as needed */
+  right: -10px; /* Adjust as needed */
+  cursor: pointer;
+}
+.close {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #866F85;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
