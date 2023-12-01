@@ -359,7 +359,7 @@ input[type="radio"] {
 /* Modal Content */
 .modal-content {
   background-color: #D6D3D3;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 50% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 60%; /* Could be more or less, depending on screen size */
@@ -368,12 +368,18 @@ input[type="radio"] {
   color: black;
   font-family: inter;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 
 /* Show the modal when display is not 'none' */
 .modal.show {
   display: block;
+}
+.rubrikHelp {
+  font-style: bold;
+  font-weight: 600;
+}
+.textHelp {
+  font-style: normal;
+  font-weight: 400;
 }

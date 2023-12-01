@@ -32,7 +32,8 @@ function Home() {
         <Link to="/ingredients" className="baka">BAKA</Link>
       </div>
       <Modal show={showModal} onClose={handleCloseModal}>
-        <p>Såhär spelar du! Välj rätt mängd av vardera ingrediens för att baka kakan som visas</p>
+        <p className="rubrikHelp">Såhär spelar du! </p> 
+        <p className="textHelp"> Välj rätt mängd av vardera ingrediens för att baka kakan som visas</p>
       </Modal>
     </div>
   );
