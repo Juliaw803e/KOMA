@@ -150,8 +150,9 @@ h3 {
   border: 3px solid #9bb685;
   border-radius: 20px;
   position: fixed; 
-  top: 50px;
-  display: flex; 
+  top: 25px;
+  display: flex;
+  left: 110px;
 }
 
 #myBar {
@@ -170,6 +171,12 @@ input[type="radio"] {
   display: flex;
   position:relative; left:20px; top:50px;
 }
+.radio-option input:checked + img {
+  border: 3px solid #be8f5c; /* Change this color as per your preference */
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
   /* Result page */
 
@@ -181,13 +188,13 @@ input[type="radio"] {
 
 .homeButton {
   position: fixed;
-  top: 45;
-  left: 0;
+  top: 15px;
+  left: 15px;
 }
 .helpButton{ 
   position: fixed;
-  top: 41;
-  right: 0;
+  top: 15px;
+  right: 15px;
 }
 
 .helpButton button { 
