@@ -64,7 +64,7 @@ const Result = () => {
       </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3"/>
   <div>
-    <button className= "bakaIgen" onClick={goToIngredientsPage}>BAKA IGEN</button>
+    <button className= "bakaIgen" onClick={goToIngredientsPage}>NY KAKA</button>
   </div>
 </div>
 ) : (
