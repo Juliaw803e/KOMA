@@ -347,7 +347,7 @@ input[type="radio"] {
   flex-direction: row;
   display:flex;
   padding-top: 10%; 
-  position:relative; left:15px; top:60px;
+  position:relative; left:25px; top:60px;
 }
 .smalltext{
   width: 300px;
