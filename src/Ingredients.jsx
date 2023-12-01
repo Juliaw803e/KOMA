@@ -145,7 +145,6 @@ return (
             </div>
           ))}
         </div>
-        <div className="nav-button-box">
           {currentIngredient !== 0 && (
             <button className="navigation-button-left" onClick={() => setCurrentIngredient(currentIngredient - 1)}>
               <img src="../images/pilv.png" alt="Back" />
@@ -157,7 +156,6 @@ return (
           </button>
           </div>
         </div>
-      </div>
   );
   
 

@@ -203,10 +203,12 @@ input[type="radio"] {
 }
 
 .navigation-button-left {
+  position: absolute;
   float: left;
   background-color: transparent;
   position:relative; left:20px; top:70px;
   border:none;
+  outline: none; 
   padding-left: 11vw;
   padding-right: 11vw;
 }
@@ -217,8 +219,16 @@ input[type="radio"] {
   background-color: transparent;
   position:relative; left:20px; top:70px;
   border:none;
+  outline: none; 
   padding-left: 11vw;
   padding-right: 11vw;
+}
+
+
+.navigation-button-left:focus,
+.navigation-button-right:focus {
+  outline: none;
+  border: none;
 }
 
 .kakor {
