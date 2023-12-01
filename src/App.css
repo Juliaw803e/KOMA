@@ -10,6 +10,11 @@
   src: url('Yaldevi.woff') format('woff');
 }
 
+@font-face {
+  font-family:inter;
+  src: url('./Inter-Regular.woff') format('woff');
+}
+
 /* ?? */
 
 #root {
