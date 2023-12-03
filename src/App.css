@@ -34,7 +34,7 @@
   height: auto;
   display: block;
   margin:auto;
-  padding: 5vw;
+  padding: 3vw;
   padding-left: 2vw;
 }
 
@@ -44,7 +44,7 @@
   height: 15vw;
 }
 .nacho1 {
-  width: 70%;
+  width: 50%;
   height: auto;
   display: block;
   margin-left: 0;
@@ -105,7 +105,7 @@
 }
 
 .FirstPage {
-  height: 852px;
+  height: 100vh;
   width: 393px;
   background-color: #F4E7E1;
 }
@@ -116,8 +116,7 @@ h3 {
 
 .ingredientPages {
   background-color: #F4E7E1;
-  width: 393px;
-  height: 852px ;
+  width: 100vw;
 }
 
 .question-text {
@@ -197,7 +196,6 @@ input[type="radio"] {
 .result {
   background-color: #F4E7E1;
   width: 393px;
-  height: 852px ;
 }
 
 .homeButton {
