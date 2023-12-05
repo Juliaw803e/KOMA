@@ -121,7 +121,7 @@ h3 {
 
 .question-text {
   width: 336px;
-  height: 87px;
+  height: 35px;
   flex-shrink: 0;
   color: #000;
   font-family: yaldevi;
@@ -129,8 +129,9 @@ h3 {
   font-style: normal;
   font-weight: 600;
   line-height: 17px;
-  position:relative; left:50px; top:50px;
+  position:relative; left:12vw; top:2vh;
   line-height: 1;
+  margin-bottom: 3vh;
 }
 .question-text-div {
   overflow: hidden; 
@@ -180,8 +181,10 @@ input[type="radio"] {
 
 .radio-options-container {
   display: flex;
-  position:relative; left:20px; top:50px;
-  margin-top: 30px;
+  position:relative; left:1vh; top:5vh;
+  margin-top: 2px;
+  margin-bottom: 3vh;
+
 }
 .radio-option input:checked + img {
   border: 3px solid #be8f5c; /* Change this color as per your preference */
@@ -326,7 +329,7 @@ input[type="radio"] {
 
 .malkakatext{
   width: 300px;
-  height: 87px;
+  height: auto;
   flex-shrink: 0;
   color: #000;
   font-family: yaldevi;
@@ -334,11 +337,13 @@ input[type="radio"] {
   font-style: normal;
   font-weight: 600;
   line-height: 17px;
-  position:relative; left:60px; top:90px;
+  position:relative; left:15vW; top:2vh;
+  padding-bottom: 5%;
 }
 
 .kakaingred{
-  position:relative; left:15px; top:20px;
+  position:relative; left:2vw; top:0vh;
+  padding-bottom: 2vh;
 }
 .containerText {
   display: flex;

@@ -52,7 +52,7 @@ const question = [
         ]
     },
     {
-        text: "Välj hur mycket chokladknappar",
+        text: "Mängd chokladknappar",
         options: [
             { id: 12, image: '../images/ingredients/20choc.png', isCorrect: false },
             { id: 13, image: '../images/ingredients/40choc.png', isCorrect: false },
@@ -60,7 +60,7 @@ const question = [
         ]
     },
     {
-        text: "Välj hur lång tid i ugnen",
+        text: "Tid i ugnen",
         options: [
             { id: 15, image: 'imageOne.jpg', isCorrect: true },
             { id: 16, image: 'imageOne.jpg', isCorrect: false },
