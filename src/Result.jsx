@@ -71,7 +71,7 @@ const Result = () => {
   <>
    <div className="nachoBubble2">
     <div className="nacho2">
-          <div class="bubble bubble-bottom-left" contEnteditable><p>{message}</p></div>
+          <div class="bubble bubble-bottom-left" contentEditable><p>{message}</p></div>
       </div>
     <img src="../images/nacho-sad.png" alt="nacho3" className="nacho3" />
       </div> 
