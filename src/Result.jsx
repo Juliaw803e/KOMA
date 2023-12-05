@@ -73,7 +73,7 @@ const Result = () => {
     <div className="nacho2">
           <div class="bubble bubble-bottom-left" contEnteditable><p>{message}</p></div>
       </div>
-    <img src="../images/nacho1.png" alt="nacho3" className="nacho3" />
+    <img src="../images/nacho-sad.png" alt="nacho3" className="nacho3" />
       </div> 
     <div>
       <button className="bakaIgen" onClick={goToIngredientsPage}> FÖRSÖK IGEN</button>
