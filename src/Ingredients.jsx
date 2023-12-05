@@ -62,9 +62,9 @@ const question = [
     {
         text: "Välj hur lång tid i ugnen",
         options: [
-            { id: 15, image: 'imageOne.jpg', isCorrect: true },
-            { id: 16, image: 'imageOne.jpg', isCorrect: false },
-            { id: 17, image: 'imageOne.jpg', isCorrect: false },
+            { id: 15, image: '../images/ingredients/clock-10.png', isCorrect: true },
+            { id: 16, image: '../images/ingredients/clock-20.png', isCorrect: false },
+            { id: 17, image: '../images/ingredients/clock-30.png', isCorrect: false },
         ]
     },
 ]
