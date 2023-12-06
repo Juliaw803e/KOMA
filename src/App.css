@@ -395,7 +395,7 @@ input[type="radio"] {
   padding: 20px;
   border: 1px solid #888;
   width: 60%; /* Could be more or less, depending on screen size */
-  height: 50%;
+  height: 30%;
   border-radius: 30px;
   color: black;
   font-size: 20px;
@@ -412,6 +412,7 @@ input[type="radio"] {
   font-weight: 600;
 }
 .textHelp {
+  padding-top: 3vh;
   font-style: normal;
   font-weight: 400;
   font-family: inter;
