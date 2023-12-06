@@ -181,17 +181,25 @@ input[type="radio"] {
 
 .radio-options-container {
   display: flex;
-  position:relative; left:1vh; top:5vh;
+  position:relative; 
+  left:1vh;
+  top:5vh;
   margin-top: 2px;
   margin-bottom: 3vh;
 
-}
-.radio-option input:checked + img {
-  border: 3px solid #be8f5c; /* Change this color as per your preference */
+} 
+
+.radio-option input:not(:checked) + img {
+  border: 3px solid #F4E7E1; 
   border-radius: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin: none; 
+}
+
+.radio-option input:checked + img {
+  border: 3px solid #be8f5c; /* Change this color as per your preference */
+  border-radius: 20px;
 }
 
   /* Result page */
