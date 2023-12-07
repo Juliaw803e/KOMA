@@ -118,8 +118,10 @@ return (
             <div id="myBar" style={barStyle}></div>
           </div>
         </div>
+        <div>
         <div className="question-text">
           <h2>{question[currentIngredient].text}</h2>  {/* renderar texten med vilken ingrediens */}
+        </div>
         </div>
         <div className="radio-options-container">
           {question[currentIngredient].options.map((option) => ( //map-funktion som renderar en lista med alternativ. Key hjälper till att rendera 
