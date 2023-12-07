@@ -24,7 +24,7 @@ function Home() {
       <div className="nachoBubble">
     
       <div className="nacho2">
-          <div className="bubble bubble-bottom-left" contentEditable>Välj ingredienter för att baka kakan som visas! </div>
+          <div className="bubble bubble-bottom-left" >Välj ingredienter för att baka kakan som visas! </div>
       </div>  
       <img src="../images/nacho1.png" alt="nacho1" className="nacho1"/>
       </div>
