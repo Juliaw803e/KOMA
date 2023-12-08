@@ -81,13 +81,15 @@
   color: black;
   position: relative;
   background-color: #fff;
-  padding: 15px;
+  padding: 18px;
   min-width: 8em;
   border-radius: 50px;
   margin-left: 20vw;
   word-wrap: break-word;
   display: flex;
   align-items: center;
+  font-family: yaldevi;
+  font-size: 20px;
 }
 
 .message {
@@ -211,7 +213,6 @@ input[type="radio"] {
 
 .result {
   background-color: #F4E7E1;
-  width: 393px;
 }
 
 .homeButton {
@@ -274,7 +275,6 @@ input[type="radio"] {
 }
 
 .nachoBubble2 {
-  padding-top: 200px;
   width: 80%;
 }
 
@@ -299,12 +299,13 @@ input[type="radio"] {
 }
 
 .nacho3 {
-  width: 60%;
+  width: 65%;
   height: auto;
   display: block;
   margin-left: 0;
   padding-right: 40%;
   padding-left: 3%;
+  margin-top: 30%;
 }
 
 .bakaIgen {
@@ -365,7 +366,6 @@ input[type="radio"] {
   display: flex;
   flex-direction: row;
   display:flex;
-  padding-top: 10%; 
   position:relative; left:25px; top:60px;
 }
 

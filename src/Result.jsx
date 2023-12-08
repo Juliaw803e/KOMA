@@ -41,7 +41,7 @@ const Result = () => {
 
 <div className= "kakor">
   <div className="wantedKaka">
-      <img src="../images/kaka.png" alt="logo" className="wanted"/>
+    <img src="../images/kaka.png" alt="logo" className="wanted"/>
   </div>
 
   {message === 'Mums, din kaka blev perfekt!' ? (
@@ -60,7 +60,7 @@ const Result = () => {
 
 <div className = "nachoBubble2">
   <div className="nacho2">
-          <div class="bubble-bottom-left"><p className="message">{message}</p> </div>
+          <div class="bubble bubble-bottom-left" contentEditable><p className="message">{message}</p> </div>
       </div>
     <img src="../images/nacho1.png" alt="nacho3" className="nacho3"/>
   <div>
@@ -71,7 +71,7 @@ const Result = () => {
   <>
    <div className="nachoBubble2">
     <div className="nacho2">
-          <div class="bubble-bottom-left"><p className="message">{message}</p></div>
+          <div class="bubble bubble-bottom-left" contentEditable><p className="message">{message}</p></div>
       </div>
     <img src="../images/nacho-sad.png" alt="nacho3" className="nacho3" />
       </div> 
