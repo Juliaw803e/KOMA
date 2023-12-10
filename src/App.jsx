@@ -19,7 +19,7 @@ function Home() {
       </div> 
 
       <div className="logo">
-      <img src="../images/logo (3).png" alt="logo" className="logo"/>
+      <img src="../images/logga.png" alt="logo" className="logo"/>
       </div>
       <div className="nachoBubble">
     
