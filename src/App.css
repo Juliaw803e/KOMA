@@ -165,6 +165,7 @@ h3 {
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  padding-bottom: 3vh;
 } 
 
 #myProgress {
@@ -290,7 +291,7 @@ input[type="radio"] {
 }
 
 .wanted {
-  margin-left: 10%;
+  margin-left: 20%;
   height: 170px;
 }
 
@@ -357,7 +358,7 @@ input[type="radio"] {
   font-style: normal;
   font-weight: 600;
   line-height: 17px;
-  position:relative; left:15vW; top:0vh;
+  position:relative; left:18vw; top:0vh;
 }
 
 .kakaingred{
