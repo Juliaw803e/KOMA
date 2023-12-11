@@ -33,7 +33,7 @@
   width: 100%;
   height: auto;
   display: block;
-  margin-top: 8%;
+  margin-top: 2%;
   padding: 3vw;
   padding-left: 2vw;
 }
@@ -59,7 +59,7 @@
 }
 
 .baka, .bakaEnTill {
-  margin-top: 5%;
+  margin-top: 4%;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -75,6 +75,10 @@
   padding-top: 2%;
   box-shadow: 3px 3px 5px rgb(122, 122, 122);
   
+}
+.bakaButton {
+  margin: auto;
+  padding-left: 12vw;
 }
 
 .bubble-bottom-left {

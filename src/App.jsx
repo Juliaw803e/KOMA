@@ -8,7 +8,6 @@ import Result from './Result';
 function Home() {
   const [showModal, setShowModal] = useState(false);
   const handleOpenModal = () => {
-    console.log('Opening modal in Home component'); // Debugging statement
     setShowModal(true);
   };
   const handleCloseModal = () => setShowModal(false);
