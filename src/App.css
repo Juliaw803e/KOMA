@@ -175,7 +175,7 @@ h3 {
   border-radius: 20px;
   position: absolute; /* or relative, depending on your layout */
   left: 28%; /* Adjust as needed, can also use pixels */
-  bottom: 92%; /* Adjust as needed, can also use pixels */
+  bottom: 93%; /* Adjust as needed, can also use pixels */
   display: flex;
 }
 
