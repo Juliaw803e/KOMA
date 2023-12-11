@@ -74,9 +74,11 @@ const Result = () => {
           <div class="bubble bubble-bottom-left"><p className="message">{message}</p></div>
       </div>
     <img src="../images/nacho-sad.png" alt="nacho3" className="nacho3" />
-      </div> 
+      </div>
+      <div className="forsokIgen"> 
     <div>
       <button className="bakaIgen" onClick={goToIngredientsPage}> FÖRSÖK IGEN</button>
+    </div>
     </div>
 </>
 )}

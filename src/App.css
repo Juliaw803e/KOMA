@@ -306,7 +306,7 @@ input[type="radio"] {
 }
 
 .nacho3 {
-  width: 65%;
+  width: 60%;
   height: auto;
   display: block;
   margin-left: 0;
@@ -316,7 +316,7 @@ input[type="radio"] {
 }
 
 .bakaIgen {
-  margin-top: 5%;
+  margin-top: 2%;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -333,6 +333,9 @@ input[type="radio"] {
   padding-bottom: 0;
   margin-top: 20px;
   box-shadow: 3px 3px 5px rgb(122, 122, 122);
+}
+.forsokIgen {
+  padding-bottom: 2vh;
 }
 
 .nachoBubble2 {
