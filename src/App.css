@@ -192,12 +192,14 @@ input[type="radio"] {
 
 .radio-options-container {
   display: flex;
-  position:relative; 
-  left:1vh;
-  top:5vh;
+  position: relative;
   margin-top: 2px;
+  margin-right: 2vw; /* Adds space on the right */
   margin-bottom: 12vh;
-
+  top: 5vh;
+  left: 2vw;
+  /* Optional: set a specific width if needed */
+  /* width: 90%; */
 } 
 
 .radio-option input:not(:checked) + img {
