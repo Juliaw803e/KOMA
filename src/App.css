@@ -172,10 +172,10 @@ h3 {
   background-color: #F4E7E1;
   border: 3px solid #9bb685;
   border-radius: 20px;
-  position: absolute; 
-  top: 25px;
+  position: absolute; /* or relative, depending on your layout */
+  left: 28%; /* Adjust as needed, can also use pixels */
+  bottom: 92%; /* Adjust as needed, can also use pixels */
   display: flex;
-  left: 110px;
 }
 
 #myBar {
