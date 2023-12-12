@@ -39,15 +39,15 @@ const question = [
         text: "Välj hur mycket smör",
         options: [
             { id: 6, image: '../images/ingredients/50butter.png', isCorrect: false },
-            { id: 7, image: '../images/ingredients/75butter.png', isCorrect: true },
-            { id: 8, image: '../images/ingredients/100butter.png', isCorrect: false },
+            { id: 7, image: '../images/ingredients/75butter.png', isCorrect: false },
+            { id: 8, image: '../images/ingredients/100butter.png', isCorrect: true },
         ]
     },
     {
         text: "Välj hur många ägg",
         options: [
-            { id: 9, image: '../images/ingredients/oneegg.png', isCorrect: true },
-            { id: 10, image: '../images/ingredients/twoeggs.png', isCorrect: false },
+            { id: 9, image: '../images/ingredients/oneegg.png', isCorrect: false },
+            { id: 10, image: '../images/ingredients/twoeggs.png', isCorrect: true },
             { id: 11, image: '../images/ingredients/threeeggs.png', isCorrect: false },
         ]
     },
